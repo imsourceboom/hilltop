@@ -1,6 +1,6 @@
 section#banner {
     position: relative;
-    height: 330px;
+    // height: 330px;
     background-color: #194663;
     background-image: url('/assets/banner/banner_bg.png');
     background-size: cover;
@@ -8,12 +8,15 @@ section#banner {
     background-position: center;
     overflow: hidden;
 
+    @media (min-width: 768px) {
+        height: 400px;
+    }
     @media (min-width: 1024px) {
         height: 500px;
     }
 
     .mobile {
-        @media (min-width: 1024px) {
+        @media (min-width: 768px) {
             display: none;
         }
     }
@@ -21,7 +24,7 @@ section#banner {
     .desk {
         display: none;
 
-        @media (min-width: 1024px) {
+        @media (min-width: 768px) {
             display: block;
         }
 
@@ -35,60 +38,62 @@ section#banner {
             align-items: flex-end;
 
             .eng-math {
-                font-size: 80px;
+                font-size: 50px;
                 font-weight: bold;
                 color: white;
+
+                @media (min-width: 1024px) {
+                    font-size: 80px;
+                }
             }
 
             img.uplands {
                 width: 100%;
-                max-width: 200px;
+                max-width: 150px;
                 height: 100%;
                 margin: 0 1rem -20px 1.5rem;
+
+                @media (min-width: 1024px) {
+                    max-width: 200px;
+                }
             }
 
             .hilltop {
                 background-color: white;
-                height: 100px;
+                height: 70px;
                 display: flex;
                 align-items: center;
                 margin-bottom: -11px;
                 padding: 0 0.5rem;
 
+                @media (min-width: 1024px) {
+                    height: 100px;
+                }
+
                 p {
-                    font-size: 80px;
+                    font-size: 50px;
                     font-weight: bold;
                     color: #194663;
                     margin-top: -3px;
+
+                    @media (min-width: 1024px) {
+                        font-size: 80px;
+                    }
                 }
             }
         }
-
-        // .decorate {
-        //     @include centered();
-        //     top: 46.69999885555555%;
-        //     left: 123.15%;
-        //     background-color: white;
-        //     width: 1000px;
-        //     height: 100px;
-
-        //     @media (min-width: 1440px) {
-        //         left: 119%;
-        //     }
-        //     @media (min-width: 1680px) {
-        //         left: 109%;
-        //     }
-        //     @media (min-width: 1920px) {
-        //         left: 102%;
-        //     }
-        // }
 
         img.comment {
             @include centered();
             top: 75%;
             width: 100%;
-            max-width: 990px;
-            padding: 0 0.5rem 0 1rem;
+            max-width: 768px;
+            padding: 0 1rem 0 1rem;
+
+            @media (min-width: 1024px) {
+                max-width: 990px;
+                padding: 0 0.5rem 0 1rem;
+            }
         }
     }
 }
