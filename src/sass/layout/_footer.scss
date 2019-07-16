@@ -1,10 +1,46 @@
-// footer {
-//     position: relative;
-//     height: 10rem;
-//     background-color: rgb(78, 78, 78);
-//     color: white;
+footer {
+    position: relative;
+    padding: 5rem 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
 
-//     h1 {
-//         @include centered;
-//     }
-// }
+    @media (min-width: 768px) {
+        font-size: 15px;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 6rem 0;
+    }
+
+    ul {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2;
+        padding: 0 1rem;
+
+        li {
+            br {
+                display: none;
+
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+        }
+
+        li:last-child {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+
+            img {
+                width: 100%;
+                max-width: 100px;
+                height: 100%;
+            }
+        }
+    }
+}

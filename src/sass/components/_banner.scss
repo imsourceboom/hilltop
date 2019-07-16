@@ -1,0 +1,79 @@
+section#banner {
+    position: relative;
+    height: 330px;
+    background-color: #194663;
+    background-image: url('/assets/banner/banner_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+    @media (min-width: 1024px) {
+        height: 500px;
+    }
+
+    .wrap {
+        z-index: 1;
+        @include centered();
+        top: 35%;
+        width: 100%;
+        // max-width: 1024px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .eng-math {
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+        }
+
+        img.uplands {
+            width: 100%;
+            max-width: 200px;
+            height: 100%;
+            margin: 0 1rem -20px 1.5rem;
+        }
+
+        .hilltop {
+            background-color: white;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            margin-bottom: -10px;
+            padding-left: 0.5rem;
+            p {
+                font-size: 90px;
+                font-weight: bold;
+                color: #194663;
+            }
+        }
+    }
+
+    .decorate {
+        @include centered();
+        top: 46.69999885555555%;
+        left: 123.15%;
+        background-color: white;
+        width: 1000px;
+        height: 100px;
+
+        @media (min-width: 1440px) {
+            left: 119%;
+        }
+        @media (min-width: 1680px) {
+            left: 109%;
+        }
+        @media (min-width: 1920px) {
+            left: 102%;
+        }
+    }
+
+    img.comment {
+        @include centered();
+        top: 75%;
+        width: 100%;
+        max-width: 1024px;
+        padding: 0 1rem;
+    }
+}

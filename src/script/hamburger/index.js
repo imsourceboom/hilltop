@@ -1,19 +1,43 @@
-import {
-    header
-} from '../elements'
+import { header } from '../elements';
 
+const hamburger = header.mobile.hamburger;
+const navMobile = header.mobile.nav;
+const ulDesk = header.desk.ul;
+const subDesk = header.desk.sub;
 
-const hamburger = header.hamburger;
-const nav = header.nav;
-const li = Array.from(header.li);
+/*
+Desktop
+*/
+const activeSubMenu = () => {
+    subDesk.style.transform = 'translateY(100%)';
+};
+const closeSubMenu = () => {
+    subDesk.style.transform = 'translateY(0)';
+};
 
-const trigger = (e) => {
+ulDesk.addEventListener('mouseover', () => {
+    activeSubMenu();
+});
+ulDesk.addEventListener('mouseout', () => {
+    closeSubMenu();
+});
+subDesk.addEventListener('mouseover', () => {
+    activeSubMenu();
+});
+subDesk.addEventListener('mouseout', () => {
+    closeSubMenu();
+});
+
+/*
+Mobile
+*/
+const trigger = e => {
     hamburger.classList.toggle('is-active');
-    nav.classList.toggle('active');
-}
+    navMobile.classList.toggle('active');
+};
 
 hamburger.addEventListener('click', trigger);
 
-li.map((i) => {
-    i.addEventListener('click', trigger);
-});
+// li.map(i => {
+//     i.addEventListener('click', trigger);
+// });

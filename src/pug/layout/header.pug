@@ -1,47 +1,96 @@
+-
+    var menu = [
+        {
+            name:'힐탑학원 소개',
+            path: 'introduce.html',
+            class: '',
+            subMenu: {
+                one: '학원소개',
+                two: '내부시설',
+            }
+        },
+        {
+            name: '공지사항',
+            path:'notice.html',
+            class: '',
+            subMenu: {
+                one: '공지사항',
+                two: '힐탑일정',
+                three: '강사채용',
+            }
+        },
+        {
+            name:'초등사관',
+            path:'public.html',
+            class: '',
+            subMenu: {
+                one: '영어',
+                two: '수학',
+            }
+            
+        },
+        {
+            name:'중등관',
+            path:'middle.html',
+            class: '',
+            subMenu: {
+                one: '영어',
+                two: '수학',
+            }
+        },
+        {
+            name:'고등관',
+            path:'high.html',
+            class: '',
+            subMenu: {
+                one: '영어',
+                two: '수학',
+            }
+        },
+    ]
 header
-    div.container
+    article.container.mobile
         figure
-            a(href="#")
-                img(src="/assets/koinvestor_symbol.svg" alt="koinvestor logo")
+            .home
+                a(href="/index.html")
+                    img(src="/assets/logo_main.png", alt="")
+                    span 힐탑학원
         nav
+            .sns-icons-wrap
+                a(href="").instagram
+                    img(src="/assets/images/instagram.png" alt="instagram logo")
+                a(href="").youtube
+                    img(src="/assets/images/youtube.png" alt="youtube logo")
             ul
-                -
-                    var menu = [
-                        {
-                            name:'ABOUT',
-                            id: 'about',
-                            class: 'delay-100'
-                        },
-                        {
-                            name: 'SERVICES',
-                            id:'services',
-                            class: 'delay-200'
-                        },
-                        {
-                            name:'TEAM',
-                            id:'team',
-                            class: 'delay-300'
-                            
-                        },
-                        {
-                            name:'PORTFOLIO',
-                            id:'portfolio',
-                            class: 'delay-400'
-                        },
-                        {
-                            name:'PARTNERS',
-                            id:'partners',
-                            class: 'delay-500'
-                        },
-                        {
-                            name:'CONTACT US',
-                            id:'contact',
-                            class: 'delay-600'
-                        }
-                    ]
                 each m in menu
-                    li.reveal(class=`${m.class}`)
-                        a(href=`#${m.id}` data-scroll)= m.name
+                    li(class=`${m.class}`)= m.name
+                        div
+                            p= m.subMenu.one
+                            p= m.subMenu.two
+                            p= m.subMenu.three
         .hamburger.hamburger--squeeze.js-hamburger
             .hamburger-box
                 .hamburger-inner
+    article.container.desk
+        figure
+            .wrap
+                .home
+                    a(href="/index.html")
+                        img(src="/assets/logo_desk.png", alt="")
+                .sns-icons-wrap
+                    a(href="").instagram
+                        img(src="/assets/images/instagram.png" alt="instagram logo")
+                    a(href="").youtube
+                        img(src="/assets/images/youtube.png" alt="youtube logo")
+        nav
+            .main
+                ul
+                    each m in menu
+                        li.reveal(class=`${m.class}`)= m.name
+            .sub
+                .container
+                    each sub in menu
+                        .wrap
+                            p=sub.subMenu.one
+                            p=sub.subMenu.two
+                            p=sub.subMenu.three
