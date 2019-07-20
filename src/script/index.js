@@ -1,6 +1,7 @@
 import './smoothscroll';
-// import './scrollreveal';
 import './hamburger';
+import './accordion';
+// import './scrollreveal';
 // import './menu';
 
 // if ('serviceWorker' in navigator) {

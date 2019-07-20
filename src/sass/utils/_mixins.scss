@@ -1,3 +1,9 @@
+@mixin wrapMaxCenter($maxWidth) {
+    width: 100%;
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+
 @mixin textellipsis($row) {
     display: block;
     overflow: hidden;
@@ -9,7 +15,6 @@
     -webkit-box-orient: vertical;
     line-height: 1.5;
 }
-
 
 @mixin flexCentered() {
     display: flex;
@@ -100,9 +105,7 @@
         @media only screen and (min-width: $desktopBP) {
             display: none;
         }
-    }
-
-    @else {
+    } @else {
         display: block;
 
         @media only screen and (min-width: $desktopBP) {
@@ -119,9 +122,7 @@
         @media only screen and (min-width: $desktopBP) {
             display: $display;
         }
-    }
-
-    @else {
+    } @else {
         display: none;
 
         @media only screen and (min-width: $desktopBP) {

@@ -1,4 +1,127 @@
 section#news {
-    height: 100px;
-    border: 1px solid red;
+    .container {
+        @include wrapMaxCenter(1024px);
+
+        hgroup {
+            text-align: center;
+            padding: 4rem 0 3rem;
+
+            @media (min-width: 768px) {
+                padding: 6rem 0 4rem;
+            }
+
+            @media (min-width: 1024px) {
+                padding: 8rem 0 6rem;
+            }
+
+            h1 {
+                color: $representColor;
+                font-size: 24px;
+                font-weight: bold;
+
+                @media (min-width: 1024px) {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .contents {
+            & > ul.box {
+                display: flex;
+                flex-wrap: wrap;
+
+                & > li {
+                    width: 100%;
+                    padding: 0 1rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    @media (min-width: 768px) {
+                        margin-bottom: 5rem;
+                        width: 50%;
+                    }
+                    .wrap {
+                        margin: 0 auto;
+
+                        @media (min-width: 1024px) {
+                            width: 85%;
+                        }
+
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0.5rem 1rem 0.5rem 1rem;
+                            background-color: rgba(90, 75, 58, 0.7);
+
+                            &.active {
+                                background-color: rgba(90, 75, 58, 1);
+                            }
+
+                            @media (min-width: 768px) {
+                                padding: 0.5rem 0.5rem 0.5rem 0.3rem;
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.88);
+                                background-color: rgba(0, 0, 0, 0) !important;
+                            }
+
+                            h3 {
+                                font-size: 16px;
+                                color: white;
+
+                                @media (min-width: 768px) {
+                                    font-size: 18px;
+                                    color: black;
+                                }
+                            }
+
+                            span {
+                                font-size: 14px;
+                                color: rgb(190, 190, 190);
+                                cursor: pointer;
+                            }
+                        }
+
+                        ul.list {
+                            list-style-type: disc !important;
+                            padding: 0.7rem 0.5rem 0.7rem 0.7rem;
+                            max-height: 0;
+                            opacity: 0;
+                            overflow: hidden;
+                            transition: 0.4s;
+
+                            &.active {
+                                max-height: 500px;
+                                opacity: 1;
+                            }
+
+                            @media (min-width: 768px) {
+                                max-height: initial;
+                                opacity: 1;
+                            }
+
+                            li {
+                                line-height: 2.5;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                opacity: 0.6;
+                                font-size: 14px;
+                                transition: 0.5s;
+
+                                @media (min-width: 768px) {
+                                    font-size: 16px;
+                                }
+
+                                &:hover {
+                                    opacity: 1;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

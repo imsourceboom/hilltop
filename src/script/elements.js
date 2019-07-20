@@ -17,8 +17,13 @@ export const header = {
 };
 
 export const main = {
-    self: doc.querySelector('body > main'),
-    section: doc.querySelectorAll('body > main > section')
+    self: doc.querySelector('body > main')
+};
+
+export const news = {
+    self: doc.querySelector('#news'),
+    title: doc.querySelectorAll('#news  .container  .contents  ul.box  .wrap > .title'),
+    list: doc.querySelectorAll('#news  .container  .contents  ul.box  .wrap > ul.list')
 };
 
 console.log('Webpack On!!');
