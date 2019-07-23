@@ -4,48 +4,48 @@
             name:'힐탑학원 소개',
             path: 'introduce.html',
             class: '',
-            subMenu: {
-                one: '학원소개',
-                two: '내부시설',
-            }
+            subMenu: [
+                 '학원소개',
+                 '내부시설',
+            ]
         },
         {
             name: '공지사항',
             path:'notice.html',
             class: '',
-            subMenu: {
-                one: '공지사항',
-                two: '힐탑일정',
-                three: '강사채용',
-            }
+            subMenu: [
+                 '공지사항',
+                 '힐탑일정',
+                 '강사채용',
+            ]
         },
         {
             name:'초등사관',
             path:'public.html',
             class: '',
-            subMenu: {
-                one: '영어',
-                two: '수학',
-            }
+            subMenu: [
+                 '영어',
+                 '수학',
+            ]
             
         },
         {
             name:'중등관',
             path:'middle.html',
             class: '',
-            subMenu: {
-                one: '영어',
-                two: '수학',
-            }
+            subMenu: [
+                 '영어',
+                 '수학',
+            ]
         },
         {
             name:'고등관',
             path:'high.html',
             class: '',
-            subMenu: {
-                one: '영어',
-                two: '수학',
-            }
+            subMenu: [
+                 '영어',
+                 '수학',
+            ]
         },
     ]
 header
@@ -60,9 +60,8 @@ header
                 each m in menu
                     li(class=`${m.class}`)= m.name
                         div
-                            p= m.subMenu.one
-                            p= m.subMenu.two
-                            p= m.subMenu.three
+                            each sub in m.subMenu
+                                p= sub
         .hamburger.hamburger--squeeze.js-hamburger
             .hamburger-box
                 .hamburger-inner
@@ -84,8 +83,7 @@ header
                         li.reveal(class=`${m.class}`)= m.name
             .sub
                 .container
-                    each sub in menu
+                    each m in menu
                         .wrap
-                            p=sub.subMenu.one
-                            p=sub.subMenu.two
-                            p=sub.subMenu.three
+                            each sub in m.subMenu
+                                p= sub
