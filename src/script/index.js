@@ -1,3 +1,4 @@
+import 'web-animations-js/web-animations.min';
 import './smoothscroll';
 import './hamburger';
 import './accordion';

@@ -1,3 +1,6 @@
 section.main_schedule {
-    min-height: 100px;
+    min-height: 300px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    @include flexCentered();
 }

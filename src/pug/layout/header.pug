@@ -2,49 +2,72 @@
     var menu = [
         {
             name:'힐탑학원 소개',
-            path: 'introduce.html',
-            class: '',
             subMenu: [
-                 '학원소개',
-                 '내부시설',
+                 {
+                    name: '학원소개',
+                    path: '/html/introduction/introduction.html'
+                 },
+                 {
+                    name: '내부시설',
+                    path: '/html/introduction/inside.html'
+                 },
             ]
         },
         {
             name: '공지사항',
-            path:'notice.html',
-            class: '',
             subMenu: [
-                 '공지사항',
-                 '힐탑일정',
-                 '강사채용',
+                 {
+                    name: '공지사항',
+                    path: '/html/notice/notice.html'
+                 },
+                 {
+                    name: '힐탑일정',
+                    path: '/html/notice/schedule.html'
+                 },
+                 {
+                    name: '강사채용',
+                    path: '/html/notice/hire.html'
+                 },
             ]
         },
         {
             name:'초등사관',
-            path:'public.html',
-            class: '',
             subMenu: [
-                 '영어',
-                 '수학',
+                 {
+                    name: '영어',
+                    path: '/html/elementary/english.html'
+                 },
+                 {
+                    name: '수학',
+                    path: '/html/elementary/math.html'
+                 },
             ]
             
         },
         {
             name:'중등관',
-            path:'middle.html',
-            class: '',
             subMenu: [
-                 '영어',
-                 '수학',
+                 {
+                    name: '영어',
+                    path: '/html/middle/english.html'
+                 },
+                 {
+                    name: '수학',
+                    path: '/html/middle/math.html'
+                 },
             ]
         },
         {
             name:'고등관',
-            path:'high.html',
-            class: '',
             subMenu: [
-                 '영어',
-                 '수학',
+                 {
+                    name: '영어',
+                    path: '/html/high/english.html'
+                 },
+                 {
+                    name: '수학',
+                    path: '/html/high/math.html'
+                 },
             ]
         },
     ]
@@ -58,10 +81,11 @@ header
         nav
             ul
                 each m in menu
-                    li(class=`${m.class}`)= m.name
+                    li= m.name
                         div
                             each sub in m.subMenu
-                                p= sub
+                                p
+                                    a(href=`${sub.path}`)= sub.name
         .hamburger.hamburger--squeeze.js-hamburger
             .hamburger-box
                 .hamburger-inner
@@ -80,10 +104,11 @@ header
             .main
                 ul
                     each m in menu
-                        li.reveal(class=`${m.class}`)= m.name
+                        li= m.name
             .sub
-                .container
+                ul.container
                     each m in menu
-                        .wrap
+                        li.wrap
                             each sub in m.subMenu
-                                p= sub
+                                p
+                                    a(href=`${sub.path}`)= sub.name

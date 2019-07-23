@@ -33,6 +33,7 @@
     "dependencies": {
         "reset-css": "^4.0.1",
         "scrollreveal": "^4.0.5",
-        "smooth-scroll": "^16.0.0"
+        "smooth-scroll": "^16.0.0",
+        "web-animations-js": "^2.3.2"
     }
 }
