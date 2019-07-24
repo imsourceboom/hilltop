@@ -1,9 +1,10 @@
 footer {
     position: relative;
     padding: 5rem 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(224, 224, 224, 0.1);
     font-size: 13px;
     color: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid rgba(112, 112, 112, 0.1);
 
     @media (min-width: 768px) {
         font-size: 15px;
