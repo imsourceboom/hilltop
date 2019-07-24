@@ -19,6 +19,10 @@ section#banner {
         @media (min-width: 768px) {
             display: none;
         }
+
+        img {
+            width: 100%;
+        }
     }
 
     .desk {
