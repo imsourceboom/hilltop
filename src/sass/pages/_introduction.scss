@@ -69,7 +69,7 @@ section#introduction {
     }
 
     article.comment {
-        padding: 6rem 0;
+        padding: 4rem 0;
         background-color: rgba(248, 247, 245, 1);
 
         @media (min-width: 768px) {
@@ -257,6 +257,160 @@ section#introduction {
                                 @media (min-width: 768px) {
                                     display: none;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    article.strategy {
+        color: $representColor;
+        padding: 5rem 0;
+
+        @media (min-width: 768px) {
+            padding: 7rem 0;
+        }
+
+        .wrap {
+            @include wrapMaxCenter(1024px);
+
+            hgroup {
+                text-align: center;
+                margin-bottom: 3rem;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 4rem;
+                }
+
+                h2 {
+                    font-weight: bold;
+
+                    @media (min-width: 768px) {
+                        font-size: 30px;
+                    }
+                }
+
+                h5 {
+                    opacity: 0.5;
+                    margin-right: -60px;
+                    line-height: 1.5;
+
+                    @media (min-width: 768px) {
+                        font-size: 15px;
+                        margin-right: -80px;
+                    }
+                }
+            }
+
+            .box {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                // border: 1px dotted green;
+
+                @media (min-width: 768px) {
+                    width: 450px;
+                    height: 450px;
+                }
+
+                .big_circle {
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid rgb(0, 57, 81);
+                    border-radius: 50%;
+                }
+
+                figure.circle {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 50%;
+                    background-color: white;
+                    // box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+                    text-align: center;
+
+                    @media (min-width: 768px) {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    img {
+                        margin: 0 auto;
+                        margin-bottom: 0.5rem;
+
+                        @media (min-width: 768px) {
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    figcaption {
+                        line-height: 1.3;
+                        font-size: 14px;
+
+                        @media (min-width: 768px) {
+                            font-size: 15px;
+                        }
+                    }
+
+                    &.graph {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        box-shadow: none;
+
+                        img {
+                            width: 65px;
+
+                            @media (min-width: 768px) {
+                                width: 90px;
+                            }
+                        }
+                    }
+
+                    &.location {
+                        top: 0;
+                        left: 0;
+                        transform: translate(-30%, 30%);
+
+                        img {
+                            width: 30px;
+
+                            @media (min-width: 768px) {
+                                width: 40px;
+                            }
+                        }
+                    }
+
+                    &.list {
+                        top: 0;
+                        right: 0;
+                        transform: translate(30%, 30%);
+
+                        img {
+                            width: 50px;
+
+                            @media (min-width: 768px) {
+                                width: 60px;
+                            }
+                        }
+                    }
+
+                    &.monkey_wrench {
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, 40%);
+
+                        img {
+                            width: 50px;
+
+                            @media (min-width: 768px) {
+                                width: 60px;
                             }
                         }
                     }
