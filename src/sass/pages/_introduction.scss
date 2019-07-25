@@ -48,18 +48,13 @@ section#introduction {
                         flex: 1;
                         border-right: 1px solid gray;
                         color: rgba(0, 0, 0, 0.68);
+                        text-align: center;
 
                         &:hover {
                             color: rgba(0, 0, 0, 1);
                         }
 
-                        &:nth-child(2),
-                        &:nth-child(3) {
-                            text-align: center;
-                        }
-
                         &:last-child {
-                            text-align: right;
                             border: none;
                         }
                     }
@@ -148,7 +143,10 @@ section#introduction {
         }
     }
 
-    article.hilltop_is {
+    article.hilltop_is,
+    article.strategy,
+    article.system,
+    article.inside {
         color: $representColor;
         padding: 5rem 0;
 
@@ -177,11 +175,23 @@ section#introduction {
 
                 h5 {
                     opacity: 0.5;
-                    margin-right: -40px;
                     line-height: 1.5;
 
                     @media (min-width: 768px) {
                         font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    article.hilltop_is {
+        .wrap {
+            hgroup {
+                h5 {
+                    margin-right: -40px;
+
+                    @media (min-width: 768px) {
                         margin-right: -50px;
                     }
                 }
@@ -266,39 +276,12 @@ section#introduction {
     }
 
     article.strategy {
-        color: $representColor;
-        padding: 5rem 0;
-
-        @media (min-width: 768px) {
-            padding: 7rem 0;
-        }
-
         .wrap {
-            @include wrapMaxCenter(1024px);
-
             hgroup {
-                text-align: center;
-                margin-bottom: 3rem;
-
-                @media (min-width: 768px) {
-                    margin-bottom: 4rem;
-                }
-
-                h2 {
-                    font-weight: bold;
-
-                    @media (min-width: 768px) {
-                        font-size: 30px;
-                    }
-                }
-
                 h5 {
-                    opacity: 0.5;
                     margin-right: -60px;
-                    line-height: 1.5;
 
                     @media (min-width: 768px) {
-                        font-size: 15px;
                         margin-right: -80px;
                     }
                 }
@@ -309,6 +292,7 @@ section#introduction {
                 width: 300px;
                 height: 300px;
                 margin: 0 auto;
+                color: rgb(0, 57, 81);
                 // border: 1px dotted green;
 
                 @media (min-width: 768px) {
@@ -417,5 +401,92 @@ section#introduction {
                 }
             }
         }
+    }
+
+    article.system {
+        border-top: 1px solid rgba(112, 112, 112, 0.1);
+
+        ul {
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+
+            li {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                white-space: nowrap;
+
+                @media (min-width: 768px) {
+                    border-right: 1px solid rgba(0, 0, 0, 0.68);
+                    height: 24px;
+                }
+
+                h2 {
+                    font-weight: bold;
+                    display: inline-block;
+                    margin-right: 0.5rem;
+                    font-size: 20px;
+
+                    @media (min-width: 768px) {
+                        font-size: 24px;
+                    }
+                }
+
+                span {
+                    font-size: 14px;
+                    align-self: flex-end;
+                    opacity: 0.86;
+                }
+
+                .divide {
+                    width: 100%;
+
+                    @media (min-width: 768px) {
+                        display: none;
+                    }
+
+                    .line {
+                        width: 50px;
+                        border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        margin: 1.5rem auto;
+                    }
+                }
+
+                &:last-child {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    border: none;
+                    margin-bottom: 0;
+
+                    @media (min-width: 768px) {
+                        align-items: flex-start;
+                        text-align: left;
+                        padding-left: 3rem;
+                        margin-top: 13px;
+                    }
+
+                    h2 {
+                        display: block;
+                    }
+
+                    span {
+                        align-self: auto;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+
+    article.inside {
+        background-color: rgb(247, 247, 247);
     }
 }
