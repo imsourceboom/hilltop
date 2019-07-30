@@ -1,0 +1,36 @@
+.picture-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 35px;
+        height: 35px;
+        background-image: url('https://icongr.am/clarity/close.svg?size=35&color=ffffff');
+        cursor: pointer;
+
+        @media (min-width: 768px) {
+            top: 2rem;
+            right: 3rem;
+            width: 40px;
+            height: 40px;
+            background-image: url('https://icongr.am/clarity/close.svg?size=40&color=ffffff');
+        }
+
+        @media (min-width: 1440px) {
+            top: 3rem;
+            right: 4rem;
+            width: 55px;
+            height: 55px;
+            background-image: url('https://icongr.am/clarity/close.svg?size=55&color=ffffff');
+        }
+    }
+}

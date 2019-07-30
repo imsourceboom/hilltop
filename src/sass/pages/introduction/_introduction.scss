@@ -493,7 +493,7 @@ section#introduction {
     article.inside {
         background-color: rgb(247, 247, 247);
 
-        .box {
+        .plan {
             position: relative;
             max-width: 768px;
             padding: 0 0.5rem;
@@ -510,15 +510,12 @@ section#introduction {
                 }
             }
 
-            .one,
+            ul.one,
             .two,
             .three,
-            .four {
+            .four,
+            .five {
                 position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
                 // border: 1px solid green;
 
                 img {
@@ -530,28 +527,80 @@ section#introduction {
                 }
             }
 
-            .one {
+            ul.one {
+                top: 8%;
+                left: 5%;
+                width: 64%;
+                height: 49%;
+                border: 1px solid blue;
+
+                li {
+                    position: absolute;
+                    cursor: pointer;
+
+                    &:first-child {
+                        top: 50%;
+                        left: 29%;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:last-child {
+                        border: 1px solid red;
+                    }
+
+                    &:nth-child(2) {
+                        width: 23.5%;
+                        height: 50%;
+                    }
+
+                    &:nth-child(3) {
+                        width: 16%;
+                        height: 100%;
+                        left: 23%;
+                    }
+
+                    &:last-child {
+                        width: 61%;
+                        height: 28%;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .two,
+            .three,
+            .four,
+            .five {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .two {
                 width: 15%;
                 height: 60%;
                 top: 32%;
                 left: 5%;
             }
 
-            .two {
+            .three {
                 width: 22%;
                 height: 35%;
                 top: 57%;
                 left: 20%;
             }
 
-            .three {
+            .four {
                 width: 27%;
                 height: 35%;
                 top: 57%;
                 left: 42%;
             }
 
-            .four {
+            .five {
                 width: 26%;
                 height: 49%;
                 top: 43%;

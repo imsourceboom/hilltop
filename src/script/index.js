@@ -5,6 +5,7 @@ import './accordion';
 import './board';
 import './school';
 import './contentsBox';
+import './inside';
 // import './scrollreveal';
 // import './menu';
 

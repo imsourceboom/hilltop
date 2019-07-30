@@ -46,4 +46,12 @@ export const contentsBox = {
     }
 };
 
+export const inside = {
+    plan: {
+        self: doc.querySelector('article#inside.inside .plan'),
+        one: Array.from(doc.querySelectorAll('article#inside .plan ul.one li')),
+        other: Array.from(doc.querySelectorAll('article#inside .plan figure'))
+    }
+};
+
 console.log('Webpack On!!');
