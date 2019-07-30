@@ -1,0 +1,211 @@
+.content-box {
+    margin-top: -30px;
+
+    @media (min-width: 768px) {
+        margin-top: -60px;
+    }
+
+    .school_title {
+        color: $representColor;
+        border-bottom: 2px solid rgba(90, 75, 58, 0.5);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        h3 {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+
+            @media (min-width: 768px) {
+                font-size: 19px;
+            }
+
+            span {
+                border-left: 1px solid rgba(0, 0, 0, 0.2);
+                padding-left: 0.7rem;
+                margin-left: 0.7rem;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+
+        figure {
+            min-width: 180px;
+            background-color: rgb(248, 247, 245);
+            display: flex;
+            align-items: center;
+            padding: 0.3rem 0.5rem;
+            cursor: pointer;
+
+            img {
+                display: inline-block;
+                width: 18px;
+            }
+
+            figcaption {
+                margin-left: 0.3rem;
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 14px;
+            }
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+
+        p {
+            display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+                font-size: 13px;
+
+                span {
+                    opacity: 0.7;
+                    margin-right: 0.8rem;
+
+                    &:last-child {
+                        margin: 0;
+
+                        b {
+                            margin-left: 0.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    article.description {
+        color: rgb(91, 91, 91);
+        line-height: 1.8;
+        font-size: 15px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        .image-box {
+            width: 100%;
+            text-align: center;
+
+            img {
+                // width: auto !important;
+                max-width: 100% !important;
+                height: auto !important;
+                // max-height: 500px !important;
+                // vertical-align: top;
+                margin: 0 auto;
+                // margin-bottom: 12px;
+                object-fit: contain;
+            }
+        }
+
+        .youtube-wrap {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+
+            iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p,
+        div {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        strong,
+        b {
+            font-weight: bold;
+        }
+
+        blockquote {
+            padding-left: 20px;
+            padding-right: 8px;
+            border-left: 5px solid #ccc;
+        }
+
+        ul,
+        ol {
+            list-style: initial;
+            display: block;
+            margin-block-start: 1rem;
+            margin-block-end: 1rem;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 20px;
+        }
+
+        a {
+            overflow: hidden;
+            word-break: break-all;
+            // color: rgb(120, 155, 221);
+            text-decoration: underline !important;
+        }
+
+        em {
+            font-style: italic;
+        }
+    }
+
+    .prev-list-next {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        padding: 3rem 0 0;
+
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
+
+        div {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: rgb(248, 247, 245);
+            color: rgba(0, 0, 0, 0.67);
+
+            &:nth-child(2) {
+                @media (min-width: 768px) {
+                    margin: 0 3rem;
+                }
+            }
+        }
+    }
+}

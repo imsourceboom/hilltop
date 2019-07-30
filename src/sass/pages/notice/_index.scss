@@ -1,0 +1,15 @@
+section#notice {
+    .container {
+        @include wrapMaxCenter(910px);
+        padding: 4rem 1rem;
+
+        @media (min-width: 768px) {
+            padding: 7rem 1rem;
+        }
+        @media (min-width: 1024px) {
+            padding: 7rem 0;
+        }
+    }
+
+    @import './notice', './schedule', './hire';
+}

@@ -1,3 +1,7 @@
 extends ../../_layout
+include ../../mixins/notice_title
 
 block main
+    section#notice.hire
+        .container
+            +notice('강사채용')

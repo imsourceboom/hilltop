@@ -26,4 +26,24 @@ export const news = {
     list: doc.querySelectorAll('#news  .container  .contents  ul.box  .wrap > ul.list')
 };
 
+export const board = {
+    self: doc.querySelector('article.board'),
+    choose: doc.querySelectorAll('article.board .choose p'),
+    footer: {
+        pages: doc.querySelectorAll('article.board .footer ul li.page')
+    }
+};
+
+export const school = {
+    title: doc.querySelectorAll('hgroup.school_title ul li')
+};
+
+export const contentsBox = {
+    description: {
+        self: doc.querySelector('article.description'),
+        image: Array.from(doc.querySelectorAll('article.description img')),
+        iframe: Array.from(doc.querySelectorAll('article.description iframe'))
+    }
+};
+
 console.log('Webpack On!!');

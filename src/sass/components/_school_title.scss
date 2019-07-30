@@ -1,0 +1,59 @@
+hgroup.school_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 5rem;
+    }
+    @media (min-width: 1680px) {
+        margin-bottom: 6rem;
+    }
+
+    h1 {
+        color: $representColor;
+        margin-bottom: 4rem;
+        font-size: 26px;
+
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1680px) {
+            margin-bottom: 5rem;
+            font-size: 32px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        width: 140px;
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+            width: 180px;
+        }
+
+        li {
+            opacity: 0.5;
+            padding: 0.5rem 0.7rem;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.66;
+            }
+
+            &.active {
+                opacity: 1;
+                border-bottom: 2px solid black;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

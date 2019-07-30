@@ -130,3 +130,27 @@
         }
     }
 }
+
+@mixin media($display) {
+    @if $display==mobile-only {
+        @media only screen and (max-width: $mobile) {
+            @content;
+        }
+    } @else if $display==tablet {
+        @media only screen and (min-width: $tablet) {
+            @content;
+        }
+    } @else if $display==tablet-only {
+        @media only screen and (min-width: $tablet) and (max-width: $desktop) {
+            @content;
+        }
+    } @else if $display==laptop {
+        @media only screen and (min-width: $laptop) {
+            @content;
+        }
+    } @else if $display==desktop {
+        @media only screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+}

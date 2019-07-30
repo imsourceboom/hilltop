@@ -1,3 +1,7 @@
 extends ../../_layout
+include ../../mixins/notice_title
 
 block main
+    section#notice.schedule
+        .container
+            +notice('스케줄')

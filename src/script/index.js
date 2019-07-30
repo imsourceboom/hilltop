@@ -2,6 +2,9 @@ import 'web-animations-js/web-animations.min';
 import './smoothscroll';
 import './hamburger';
 import './accordion';
+import './board';
+import './school';
+import './contentsBox';
 // import './scrollreveal';
 // import './menu';
 

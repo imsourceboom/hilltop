@@ -1,4 +1,4 @@
-@import 'utils/var', 'utils/mixins';
+@import 'utils/var', 'utils/mixins', 'utils/custom_mixins';
 
 @import 'base/reset', 'base/typography', 'base/base';
 
@@ -7,6 +7,7 @@
 @import 'layout/header', 'layout/main', 'layout/footer';
 
 @import 'components/go_top', 'components/banner', 'components/news', 'components/schedule',
-    'components/notice_title';
+    'components/notice_title', 'components/list', 'components/school_title',
+    'components/content_box';
 
-@import 'pages/introduction';
+@import 'pages/introduction/introduction', 'pages/notice/index', 'pages/school/index';

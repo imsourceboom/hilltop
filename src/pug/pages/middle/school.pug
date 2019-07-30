@@ -1,0 +1,9 @@
+extends ../../_layout
+include ../../mixins/school_title
+include ../../mixins/list
+
+block main
+    section#school
+        .container
+            +school('중등관')
+            +list('/html/elementary/detail.html')
