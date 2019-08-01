@@ -499,6 +499,9 @@ section#introduction {
             padding: 0 0.5rem;
             margin: 0 auto;
             // border: 1px solid red;
+            *:active {
+                -webkit-tap-highlight-color: transparent;
+            }
 
             @media (min-width: 768px) {
                 padding: 0 1rem;
@@ -532,7 +535,7 @@ section#introduction {
                 left: 5%;
                 width: 64%;
                 height: 49%;
-                border: 1px solid blue;
+                // border: 1px solid blue;
 
                 li {
                     position: absolute;
@@ -543,11 +546,11 @@ section#introduction {
                         left: 29%;
                     }
 
-                    &:nth-child(2),
-                    &:nth-child(3),
-                    &:last-child {
-                        border: 1px solid red;
-                    }
+                    // &:nth-child(2),
+                    // &:nth-child(3),
+                    // &:last-child {
+                    //     border: 1px solid red;
+                    // }
 
                     &:nth-child(2) {
                         width: 23.5%;

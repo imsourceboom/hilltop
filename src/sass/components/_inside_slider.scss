@@ -7,6 +7,10 @@
     height: 100vh;
     transition: 0.5s;
     background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
 
     .close {
         position: absolute;
@@ -31,6 +35,70 @@
             width: 55px;
             height: 55px;
             background-image: url('https://icongr.am/clarity/close.svg?size=55&color=ffffff');
+        }
+    }
+
+    .wrap {
+        width: 100%;
+        max-width: 768px;
+        // border: 1px solid red;
+        height: 300px;
+
+        @media (min-width: 768px) {
+            height: 60%;
+        }
+
+        .swiper-container {
+            .swiper-slide {
+                width: 100%;
+
+                img {
+                    display: inline-block;
+                    width: 100%;
+                    max-width: 768px;
+                    height: 100%;
+                    // max-width: 768px;
+                    object-fit: cover;
+                }
+            }
+
+            &.gallery-top {
+                height: 80%;
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    background-size: 50%;
+
+                    @media (min-width: 768px) {
+                        background-size: 80%;
+                    }
+                }
+
+                .swiper-slide {
+                    cursor: grab;
+
+                    &:active {
+                        cursor: grabbing;
+                    }
+                }
+            }
+
+            &.gallery-thumbs {
+                height: 20%;
+                box-sizing: border-box;
+                padding-top: 10px;
+
+                .swiper-slide {
+                    width: 25%;
+                    max-width: 192px;
+                    opacity: 0.4;
+                    cursor: pointer;
+                }
+
+                .swiper-slide-thumb-active {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
