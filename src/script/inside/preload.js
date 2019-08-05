@@ -22,7 +22,7 @@ export const preload = () => {
         // console.log(image);
         image.map(image => {
             const link = document.createElement('link');
-            link.rel = 'prefetch';
+            link.rel = 'preload';
             link.as = 'image';
             link.href = image;
             // console.log(link);
