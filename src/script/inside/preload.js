@@ -19,18 +19,12 @@ const images = [
 
 export const preload = () => {
     images.map(image => {
-        // console.log(image);
         image.map(image => {
             const link = document.createElement('link');
             link.rel = 'preload';
             link.as = 'image';
             link.href = image;
-            // console.log(link);
             document.head.appendChild(link);
         });
     });
 };
-// const preloadLink = document.createElement('link');
-// preloadLink.rel = 'preload';
-// preloadLink.as = 'image';
-// preloadLink.href = '/assets/images/inside/entry/1.jpg';
