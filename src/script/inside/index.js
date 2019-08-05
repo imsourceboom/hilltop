@@ -1,13 +1,17 @@
 import { inside } from '../elements';
-// import Swiper from 'swiper';
+import { preload } from './preload';
 
 const entryway = inside.plan.one;
 const rooms = inside.plan.other;
 
 if (inside.plan.self !== null) {
+    preload();
+
+    // Swiper script CDN add
     const scriptSrc = document.createElement('script');
     scriptSrc.src = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js';
     document.head.appendChild(scriptSrc);
+    // Swiper CSS CDN add
     const swiperCss = document.createElement('link');
     swiperCss.setAttribute('rel', 'stylesheet');
     swiperCss.setAttribute(
@@ -17,6 +21,7 @@ if (inside.plan.self !== null) {
     document.head.appendChild(swiperCss);
 
     const htmlStructure = (imagePath, count) => {
+        // Swiper execute script code
         const script = document.createElement('script');
         script.innerHTML = `
             var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -37,7 +42,6 @@ if (inside.plan.self !== null) {
                     swiper: galleryThumbs
                 }
             });
-            console.log('hi');
         `;
 
         const container = document.createElement('div');
