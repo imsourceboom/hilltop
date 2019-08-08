@@ -8,6 +8,7 @@
 
 @import 'components/go_top', 'components/banner', 'components/news', 'components/schedule',
     'components/notice_title', 'components/list', 'components/school_title',
-    'components/content_box', 'components/inside_slider';
+    'components/content_box', 'components/inside_slider', 'components/list_admin';
 
-@import 'pages/introduction/introduction', 'pages/notice/index', 'pages/school/index';
+@import 'pages/introduction/introduction', 'pages/notice/index', 'pages/school/index',
+    'pages/admin/index';

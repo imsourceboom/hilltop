@@ -6,6 +6,8 @@ import './board';
 import './school';
 import './contentsBox';
 import './inside';
+import './checked';
+import './adminNav';
 // import './scrollreveal';
 // import './menu';
 

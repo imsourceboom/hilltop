@@ -1,0 +1,64 @@
+mixin adminList(path)
+    article.admin.board
+        form.filter(method="" action="")
+            .choose
+                p.active
+                    span
+                    span 작성일순
+                p
+                    span
+                    span 조회수순
+            .search
+                select
+                    option(disabled selected) 작성자
+                    -   var filter = ['이름', '회원그룹', '휴대폰번호']
+                    each f in filter
+                        option= f
+                input(type="text" placeholder="검색어 입력").mobile
+                //- input(type="text" placeholder="검색어 입력").pc
+                //- button(type="submit") 검색
+            //- button(type="button")
+            //-     a(href="./register.html") 회원 등록
+        .list
+            .head
+                ul
+                    li
+                        input(type="checkbox" id="allcheck")
+                        label(for="allcheck")
+                            span
+                    - let head = ['No', '제목', '작성자', '작성일', '조회수']
+                    each h in head
+                        li= h
+            .body
+                // a Tag 삭제
+                a(href=path)
+                    ul
+                        li
+                            input(type="checkbox" id="check1")
+                            label(for="check1")
+                                span
+                        li 1
+                        li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 
+                        li 신세현
+                        li 2019-04-11
+                        li 9999
+                - for (let i = 2; i <= 15; i++)
+                    ul
+                        li
+                            input(type="checkbox" id=`check${i}`)
+                            label(for=`check${i}`)
+                                span
+                        li= i
+                        - let body = ['나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여', '임승범', '2019-00-00', '9999']
+                        each b in body
+                            li= b
+            .footer
+                .buttons
+                    .delete 삭제
+                    .register 등록
+                ul
+                    li Prev
+                    li.page.active 1
+                    - for (let i = 2; i <= 5; i++)
+                        li.page= i
+                    li Next

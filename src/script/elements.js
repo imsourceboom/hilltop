@@ -54,4 +54,17 @@ export const inside = {
     }
 };
 
+export const checked = {
+    allCheck: doc.querySelector('article.board.admin .list li #allcheck'),
+    checks: Array.from(doc.querySelectorAll('article.board.admin .list .body li input'))
+};
+
+export const adminNav = {
+    self: doc.querySelector('main#admin > nav'),
+    mobile: {
+        menu: doc.querySelector('main#admin > nav .mobile .menu'),
+        menuBox: doc.querySelector('main#admin > nav .mobile ul')
+    }
+};
+
 console.log('Webpack On!!');

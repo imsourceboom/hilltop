@@ -1,0 +1,49 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="format-detaction", content="telephone=no, address=no, email=no")
+
+        title 힐탑학원 관리자
+        link(rel="stylesheet", href="/css/main.css")
+
+        script(crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js" async defer) 
+        script(src="/js/app.js" defer)
+
+    body#body
+
+        -
+            var menus = [
+                '공지사항',
+                '힐탑일정',
+                '강사채용',
+                '초등사관',
+                '중등관',
+                '고등관',
+                '회원관리',
+                'SNS관리',
+            ]
+
+        main#admin
+            nav
+                .mobile
+                    figure
+                        img(src="/assets/images/logo_main.png", alt="")
+                        figcaption 힐탑학원
+                    .menu
+                        - for(var i = 0; i < 9; i++)
+                            div
+                    ul
+                        each menu in menus
+                            li
+                                a(href="")= menu
+                .desk
+                    img(src="/assets/images/logo_desk.png", alt="")
+                    ul
+                        each menu in menus
+                            li
+                                a(href="")= menu
+            .container
+                block main
