@@ -45,6 +45,9 @@
 }
 
 @mixin customSelect() {
+    &::-ms-expand {
+        display: none;
+    }
     -webkit-progress-appearance: none;
     -moz-appearance: none;
     appearance: none;
