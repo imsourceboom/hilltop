@@ -14,11 +14,9 @@ mixin adminList(path)
                     -   var filter = ['이름', '회원그룹', '휴대폰번호']
                     each f in filter
                         option= f
-                input(type="text" placeholder="검색어 입력").mobile
-                //- input(type="text" placeholder="검색어 입력").pc
-                //- button(type="submit") 검색
-            //- button(type="button")
-            //-     a(href="./register.html") 회원 등록
+                label(for="")
+                    input(type="text" placeholder="검색어 입력").text
+                    input(type="submit" value="").submit
         .list
             .head
                 ul

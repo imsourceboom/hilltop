@@ -79,30 +79,24 @@ article.admin {
                 }
             }
 
-            input {
-                @include customInput;
-            }
+            label {
+                display: flex;
 
-            input.mobile {
-                width: 100%;
-                padding-left: 0;
-                padding-right: 1.5rem;
+                input {
+                    @include customInput;
+                }
 
-                background-image: url('https://icongr.am/feather/search.svg?size=20&color=cccccc');
-                background-repeat: no-repeat;
-                background-position: 100% 50%;
-            }
+                input.text {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
 
-            button[type='submit'] {
-                @include customButton(#95afc0, #fff);
-                border: 1px solid rgba(0, 0, 0, 0);
-                padding: 0.5rem 3rem;
-                display: none;
-
-                @include media(tablet) {
-                    & {
-                        display: block;
-                    }
+                input.submit {
+                    background-image: url('https://icongr.am/feather/search.svg?size=20&color=cccccc');
+                    background-repeat: no-repeat;
+                    background-position: 100% 50%;
+                    cursor: pointer;
                 }
             }
         }

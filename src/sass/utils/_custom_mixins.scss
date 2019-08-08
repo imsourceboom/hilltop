@@ -21,10 +21,10 @@
     transition: 0.5s;
     // cursor: pointer;
 
-    &:hover {
-        // border: 1px solid rgba(0, 0, 0, 0);
-        // box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
-    }
+    // &:hover {
+    // border: 1px solid rgba(0, 0, 0, 0);
+    // box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    // }
 }
 
 @mixin customButton($back: #fff, $color: null) {
