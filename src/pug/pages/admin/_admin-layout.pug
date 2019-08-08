@@ -29,9 +29,10 @@ html(lang="ko")
         main#admin
             nav
                 .mobile
-                    figure
-                        img(src="/assets/images/logo_main.png", alt="")
-                        figcaption 힐탑학원
+                    a(href="/index.html")
+                        figure
+                            img(src="/assets/images/logo_main.png", alt="")
+                            figcaption 힐탑학원
                     .menu
                         - for(var i = 0; i < 9; i++)
                             div
@@ -40,7 +41,8 @@ html(lang="ko")
                             li
                                 a(href="")= menu
                 .desk
-                    img(src="/assets/images/logo_desk.png", alt="")
+                    a(href="/index.html")
+                        img(src="/assets/images/logo_desk.png", alt="")
                     ul
                         each menu in menus
                             li

@@ -1,0 +1,16 @@
+extends ../../_layout
+
+block main
+    section#login
+        form(action="")
+            label(for="id")
+                input(type="text" id="id" placeholder=" ")
+                span 아이디
+            label(for="password")
+                input(type="password" id="password" placeholder=" ")
+                span 비밀번호
+            a(href="/html/admin/default.html")
+                button(type="button") 로그인
+            .find
+                span 아이디 찾기
+                span 비밀번호 찾기
