@@ -1,0 +1,95 @@
+&.hire {
+    article.contents-box {
+        hgroup {
+            margin-bottom: 5rem;
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        ul {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 1rem;
+
+            @media (min-width: 768px) {
+                padding: 0;
+            }
+
+            li {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 4rem;
+                font-size: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                @media (min-width: 768px) {
+                    flex-direction: row;
+                    font-size: 16px;
+                }
+
+                .title {
+                    width: 140px;
+                    padding-bottom: 1.5rem;
+
+                    @media (min-width: 768px) {
+                        padding-bottom: 0;
+                    }
+                }
+
+                .desc {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .contact {
+            max-width: 500px;
+            margin: 5rem auto 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 7rem auto 2rem;
+            }
+
+            figure {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                background-color: rgb(249, 249, 248);
+
+                &:first-child {
+                    @media (max-width: 767px) {
+                        margin-bottom: 1rem;
+                    }
+
+                    img {
+                        width: 22px;
+                    }
+                }
+
+                &:last-child {
+                    img {
+                        width: 27px;
+                    }
+                }
+
+                img {
+                    margin-right: 0.5rem;
+                }
+
+                figcaption {
+                    color: rgba(160, 145, 129, 1);
+                }
+            }
+        }
+    }
+}

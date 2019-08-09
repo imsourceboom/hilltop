@@ -1,7 +1,31 @@
 extends ../../_layout
 include ../../mixins/notice_title
 
+
 block main
     section#notice.hire
         .container
             +notice('강사채용')
+            article.contents-box
+                hgroup
+                    h3 힐탑학원과 함께할 임직원 가족을 모십니다.
+                ul
+                    -
+                        var temporary = [
+                            {title: '힐탑인재상', desc: '아무도 보이는이 없을 때에 한 점 부끄러움 없이 아이들을 사랑하는 자.'},
+                            {title:'지원자격', desc: '수학과 혹은 수학교육과 졸업자 / 졸업예정자 가능'},
+                            {title: '졸업증명서', desc:'경력증명서(경력자 한하여)'},
+                            {title:'면접일정', desc: '2019.10.10 - 채용 마감시까지'},
+                            {title:'희망연봉', desc: '조정 후 회사내규에 따름'},
+                        ]
+                    each temp in temporary
+                        li
+                            .title= temp.title
+                            .desc= temp.desc
+                .contact
+                    figure
+                        img(src="/assets/images/hire/call.png", alt="")
+                        figcaption 010-1234-1234
+                    figure
+                        img(src="/assets/images/hire/email.png", alt="")
+                        figcaption hilltop@naver.com
