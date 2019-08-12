@@ -75,23 +75,23 @@ section#login {
             cursor: pointer;
         }
 
-        .find {
-            font-size: 12px;
+        // .find {
+        //     font-size: 12px;
 
-            span {
-                opacity: 0.4;
-                cursor: pointer;
+        //     span {
+        //         opacity: 0.4;
+        //         cursor: pointer;
 
-                &:first-child {
-                    padding-right: 0.7rem;
-                    margin-right: 0.7rem;
-                    border-right: 1px solid rgba(0, 0, 0, 0.1);
-                }
+        //         &:first-child {
+        //             padding-right: 0.7rem;
+        //             margin-right: 0.7rem;
+        //             border-right: 1px solid rgba(0, 0, 0, 0.1);
+        //         }
 
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
+        //         &:hover {
+        //             opacity: 1;
+        //         }
+        //     }
+        // }
     }
 }
