@@ -150,6 +150,53 @@
         }
     }
 
+    article.attached-file {
+        margin-top: 3rem;
+
+        hgroup {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 0.3rem;
+            }
+        }
+
+        ul.file-box {
+            background-color: rgba(249, 248, 248, 1);
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+
+            li {
+                display: flex;
+                margin-bottom: 0.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    &:hover span {
+                        color: rgba(0, 0, 0, 0.67);
+                    }
+
+                    img {
+                        max-width: 18px;
+                        margin-right: 0.3rem;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+        }
+    }
+
     .prev-list-next {
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         display: flex;
