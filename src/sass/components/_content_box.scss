@@ -5,78 +5,46 @@
         margin-top: -60px;
     }
 
-    .school_title {
-        color: $representColor;
-        border-bottom: 2px solid rgba(90, 75, 58, 0.5);
-        padding-bottom: 0.5rem;
-        margin-bottom: 0.5rem;
-
-        h3 {
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-
-            @media (min-width: 768px) {
-                font-size: 19px;
-            }
-
-            span {
-                border-left: 1px solid rgba(0, 0, 0, 0.2);
-                padding-left: 0.7rem;
-                margin-left: 0.7rem;
-                font-size: 14px;
-                color: rgba(0, 0, 0, 0.5);
-            }
-        }
-    }
-
     .title {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: flex-start;
         margin-bottom: 3rem;
 
-        figure {
-            min-width: 180px;
-            background-color: rgb(248, 247, 245);
-            display: flex;
-            align-items: center;
-            padding: 0.3rem 0.5rem;
-            cursor: pointer;
-
-            img {
-                display: inline-block;
-                width: 18px;
-            }
-
-            figcaption {
-                margin-left: 0.3rem;
-                color: rgba(0, 0, 0, 0.5);
-                font-size: 14px;
-            }
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-between;
         }
 
         h4 {
             font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+
+            @media (min-width: 1024px) {
+                margin-bottom: 0;
+            }
         }
 
         p {
-            display: none;
+            display: block;
+            font-size: 13px;
 
-            @media (min-width: 768px) {
-                display: block;
-                font-size: 13px;
+            @media (min-width: 1024px) {
+                text-align: right;
+                min-width: 200px;
+                line-height: 1.8;
+            }
 
-                span {
-                    opacity: 0.7;
-                    margin-right: 0.8rem;
+            span {
+                opacity: 0.7;
+                margin-right: 0.8rem;
 
-                    &:last-child {
-                        margin: 0;
+                &:last-child {
+                    margin: 0;
 
-                        b {
-                            margin-left: 0.3rem;
-                        }
+                    b {
+                        margin-left: 0.3rem;
                     }
                 }
             }
@@ -185,12 +153,13 @@
     .prev-list-next {
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         margin-top: 3rem;
-        padding: 3rem 0 0;
+        padding: 1rem 0 0;
 
         @media (min-width: 768px) {
-            justify-content: center;
+            padding: 3rem 0 0;
+            // justify-content: center;
         }
 
         div {

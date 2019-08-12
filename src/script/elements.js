@@ -35,7 +35,7 @@ export const board = {
 };
 
 export const school = {
-    title: doc.querySelectorAll('hgroup.school_title ul li')
+    title: doc.querySelectorAll('hgroup.common-title ul li')
 };
 
 export const contentsBox = {

@@ -1,9 +1,9 @@
 extends ../../_layout
-include ../../mixins/notice_title
+include ../../mixins/common_title
 include ../../mixins/list
 
 block main
     section#notice.notice
         .container
-            +notice('공지사항')
+            +common_title('공지사항', '', 'list')
             +list('/html/notice/detail.html')

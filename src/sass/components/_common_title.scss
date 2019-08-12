@@ -1,0 +1,64 @@
+hgroup.common-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: $representColor;
+    border-bottom: 2px solid rgba(90, 75, 58, 0.5);
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 5rem;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+            font-size: 19px;
+        }
+
+        ul {
+            display: flex;
+            margin-left: 1rem;
+            font-size: 13px;
+
+            @media (min-width: 768px) {
+                margin-left: 1.5rem;
+                font-size: 14px;
+            }
+
+            li {
+                color: rgba(0, 0, 0, 0.44);
+                cursor: pointer;
+
+                &.active {
+                    color: black;
+                }
+            }
+
+            li:first-child {
+                padding: 0 1rem;
+                border-right: 1px solid rgba(0, 0, 0, 0.2);
+            }
+
+            li:last-child {
+                padding: 0 1rem;
+            }
+        }
+
+        span {
+            border-left: 1px solid rgba(0, 0, 0, 0.2);
+            padding-left: 0.7rem;
+            margin-left: 0.7rem;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    p {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.35);
+    }
+}
