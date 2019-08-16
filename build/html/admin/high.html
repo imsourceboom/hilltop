@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detaction" content="telephone=no, address=no, email=no">
+    <title>힐탑학원 관리자</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js" async defer> </script>
+    <script src="/js/app.js" defer></script>
+  </head>
+  <body id="body">
+    <main id="admin">
+      <nav>
+        <div class="mobile"><a href="/index.html">
+            <figure><img src="/assets/images/logo_main.png" alt="">
+              <figcaption>힐탑학원</figcaption>
+            </figure></a>
+          <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul>
+            <li><a class="active" href="/html/admin/notice.html">공지사항</a></li>
+            <li><a href="/html/admin/schedule.html">힐탑일정</a></li>
+            <li><a href="/html/admin/employ.html">강사채용</a></li>
+            <li><a href="/html/admin/elementary.html">초등사관</a></li>
+            <li><a href="/html/admin/middle.html">중등관</a></li>
+            <li><a href="/html/admin/high.html">고등관</a></li>
+            <li><a href="/html/admin/member.html">회원관리</a></li>
+            <li><a href="/html/admin/sns.html">SNS관리</a></li>
+          </ul>
+        </div>
+        <div class="desk"><a href="/index.html"><img src="/assets/images/logo_desk.png" alt=""></a>
+          <ul>
+            <li><a class="active" href="/html/admin/notice.html">공지사항</a></li>
+            <li><a href="/html/admin/schedule.html">힐탑일정</a></li>
+            <li><a href="/html/admin/employ.html">강사채용</a></li>
+            <li><a href="/html/admin/elementary.html">초등사관</a></li>
+            <li><a href="/html/admin/middle.html">중등관</a></li>
+            <li><a href="/html/admin/high.html">고등관</a></li>
+            <li><a href="/html/admin/member.html">회원관리</a></li>
+            <li><a href="/html/admin/sns.html">SNS관리</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="contents">
+        <div class="container">
+          <section class="school">
+            <hgroup class="common-title admin">
+              <h3>고등관
+                <ul>
+                  <li class="active">영어</li>
+                  <li>수학</li>
+                </ul>
+              </h3>
+              <p>list</p>
+            </hgroup>
+            <article class="admin board">
+              <form class="filter" method="" action="">
+                <div class="choose">
+                  <p class="active"><span></span><span>작성일순</span></p>
+                  <p><span></span><span>조회수순</span></p>
+                </div>
+                <div class="search">
+                  <select>
+                    <option disabled="disabled" selected="selected">작성자</option>
+                    <option>이름</option>
+                    <option>회원그룹</option>
+                    <option>휴대폰번호</option>
+                  </select>
+                  <label for="">
+                    <input class="text" type="text" placeholder="검색어 입력"/>
+                    <input class="submit" type="submit" value=""/>
+                  </label>
+                </div>
+              </form>
+              <div class="list">
+                <div class="head">
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="allcheck"/>
+                      <label for="allcheck"><span></span></label>
+                    </li>
+                    <li>No</li>
+                    <li>제목</li>
+                    <li>작성자</li>
+                    <li>작성일</li>
+                    <li>조회수</li>
+                  </ul>
+                </div>
+                <div class="body">
+                  <!-- a Tag 삭제--><a href="/html/admin/school-edit.html">
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="check1"/>
+                        <label for="check1"><span></span></label>
+                      </li>
+                      <li>1</li>
+                      <li>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 </li>
+                      <li>신세현</li>
+                      <li>2019-04-11</li>
+                      <li>9999</li>
+                    </ul></a>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check2"/>
+                      <label for="check2"><span></span></label>
+                    </li>
+                    <li>2</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check3"/>
+                      <label for="check3"><span></span></label>
+                    </li>
+                    <li>3</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check4"/>
+                      <label for="check4"><span></span></label>
+                    </li>
+                    <li>4</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check5"/>
+                      <label for="check5"><span></span></label>
+                    </li>
+                    <li>5</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check6"/>
+                      <label for="check6"><span></span></label>
+                    </li>
+                    <li>6</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check7"/>
+                      <label for="check7"><span></span></label>
+                    </li>
+                    <li>7</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check8"/>
+                      <label for="check8"><span></span></label>
+                    </li>
+                    <li>8</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check9"/>
+                      <label for="check9"><span></span></label>
+                    </li>
+                    <li>9</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check10"/>
+                      <label for="check10"><span></span></label>
+                    </li>
+                    <li>10</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check11"/>
+                      <label for="check11"><span></span></label>
+                    </li>
+                    <li>11</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check12"/>
+                      <label for="check12"><span></span></label>
+                    </li>
+                    <li>12</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check13"/>
+                      <label for="check13"><span></span></label>
+                    </li>
+                    <li>13</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check14"/>
+                      <label for="check14"><span></span></label>
+                    </li>
+                    <li>14</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="check15"/>
+                      <label for="check15"><span></span></label>
+                    </li>
+                    <li>15</li>
+                    <li>나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여</li>
+                    <li>임승범</li>
+                    <li>2019-00-00</li>
+                    <li>9999</li>
+                  </ul>
+                </div>
+                <div class="footer">
+                  <div class="buttons">
+                    <div class="delete">삭제</div>
+                    <div class="register">등록</div>
+                  </div>
+                  <ul>
+                    <li>Prev</li>
+                    <li class="page active">1</li>
+                    <li class="page">2</li>
+                    <li class="page">3</li>
+                    <li class="page">4</li>
+                    <li class="page">5</li>
+                    <li>Next</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

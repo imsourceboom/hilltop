@@ -1,0 +1,5 @@
+mixin labelTextarea(text, id, placeholder=" ")
+    label(for=id)&attributes(attributes).custom.label-textarea
+        textarea(id=id placeholder=placeholder rows="20")
+        span=text
+

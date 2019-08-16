@@ -1,0 +1,8 @@
+extends ./_admin-layout
+include ../../mixins/list_admin
+include ../../mixins/admin_common_title
+
+block main
+    section.school
+        +admin_common_title('중등관', 'school', 'list')
+        +adminList('/html/admin/school-edit.html')

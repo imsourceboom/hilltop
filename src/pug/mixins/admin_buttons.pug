@@ -1,0 +1,11 @@
+mixin admin_buttons(...items)
+    .admin-buttons
+        ul
+            each item in items
+                if item === '수정' || item === '등록'
+                    li
+                        input(type="submit" value=item)
+                if item === '취소' || item === '삭제'
+                    li
+                        button(type="button")=item
+                

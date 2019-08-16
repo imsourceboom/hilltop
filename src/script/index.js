@@ -1,4 +1,4 @@
-import 'web-animations-js/web-animations.min';
+// import 'web-animations-js/web-animations.min';
 import './smoothscroll';
 import './hamburger';
 import './accordion';
@@ -8,6 +8,7 @@ import './contentsBox';
 import './inside';
 import './checked';
 import './adminNav';
+import './flatpickr';
 // import './scrollreveal';
 // import './menu';
 

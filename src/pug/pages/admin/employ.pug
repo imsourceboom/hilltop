@@ -1,0 +1,17 @@
+extends ./_admin-layout
+include ../../mixins/admin_common_title
+include ../../mixins/label-input
+include ../../mixins/label-textarea
+include ../../mixins/admin_buttons
+
+block main
+    section.employ
+        +admin_common_title('강사채용')
+        article
+            form
+                +labelTextarea('힐탑인재상')(class="span-width-80")
+                +labelInput('지원자격')(class="span-width-80")
+                +labelInput('제출서류')(class="span-width-80")
+                +labelInput('면접일정')(class="span-width-80")
+                +labelInput('희망연봉')(class="span-width-80")
+            +admin_buttons('수정')

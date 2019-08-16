@@ -1,0 +1,4 @@
+mixin labelInput(text, typed="text", id, placeholder=" ")
+    label(for=id)&attributes(attributes).custom.label-input
+        input(type=typed id=id placeholder=placeholder)
+        span=text

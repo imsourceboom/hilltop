@@ -1,0 +1,55 @@
+section.sns {
+    article {
+        max-width: 500px;
+        padding: 3rem 0;
+
+        form {
+            label {
+                display: flex;
+                align-items: center;
+                height: 33px;
+                margin-bottom: 1.5rem;
+
+                &:first-child {
+                    figure {
+                        img {
+                            width: 26px;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+
+                    figure {
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+
+                figure {
+                    min-width: 50px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                input {
+                    @include customInput();
+                    flex: 1;
+                    height: 100%;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    &:focus {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}

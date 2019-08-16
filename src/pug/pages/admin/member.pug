@@ -1,0 +1,37 @@
+extends ./_admin-layout
+include ../../mixins/admin_common_title
+
+block main
+    section.member
+        +admin_common_title('회원관리', '', 'list')
+        article
+            ul
+                li
+                    a(href="/html/admin/member-edit.html")
+                        img(src="/assets/images/admin/plus.svg", alt="plus")
+                - for (var i = 0; i < 6; i++)
+                    li
+                        .control
+                            a(href="")
+                                img(src="/assets/images/admin/close.svg", alt="close").close-icon
+                            a(href="/html/admin/member-edit.html")
+                                img(src="/assets/images/admin/edit.svg", alt="edit").edit-icon
+                        .info
+                            h3 신세현
+                            .bundle
+                                .title 아이디
+                                .description hilltopceo777
+                            .bundle
+                                .title 생년월일
+                                .description 0000.00.00
+                            .bundle
+                                .title 이메일
+                                .description hilltopceo777@naver.com
+                            .bundle
+                                .title 가입일
+                                .description 0000.00.00
+                            .bundle
+                                .title 비고
+                                .description 국회는 헌법 또는 법률에 특별한 규정이 없는 한 재적의원 과반수의 출석과 출석의원 과반수의 찬성으로 의결한다. 가부동수인 때에는 부결된 것으로 본다. 일반사면을 명하려면 국회의 동의를 얻어야 한다. 
+                            
+                        

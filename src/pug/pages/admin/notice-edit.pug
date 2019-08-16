@@ -1,0 +1,10 @@
+extends ./_admin-layout
+include ../../mixins/admin_common_title
+include ../../mixins/admin_basic_form
+include ../../mixins/admin_buttons
+
+block main
+    section.notice-edit
+        +admin_common_title('공지사항', '', 'edit')
+        +admin_basic_form()
+        +admin_buttons('수정', '삭제', '취소')

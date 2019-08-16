@@ -1,0 +1,44 @@
+article.admin-basic-form {
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            width: 80%;
+            margin-right: 1rem;
+
+            span {
+                margin-right: 0.5rem;
+                margin-top: -2px;
+            }
+
+            div {
+                height: 16px;
+                border-right: 1px solid rgba(0, 0, 0, 0.5);
+                margin-right: 0.5rem;
+            }
+
+            input {
+                height: 100%;
+                border: 0;
+                font-size: 15px;
+            }
+        }
+
+        select {
+            @include customSelect();
+            width: 20%;
+            min-width: 100px;
+            padding: 0.3rem 2.5rem 0.3rem 0.5rem;
+        }
+    }
+
+    .edit-box {
+        min-height: 500px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 1.5rem 0;
+    }
+}

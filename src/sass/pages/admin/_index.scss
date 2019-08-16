@@ -126,6 +126,14 @@ main#admin {
                     width: 50%;
                     text-align: center;
                     margin-bottom: 2rem;
+
+                    a {
+                        color: rgba(0, 0, 0, 0.5);
+
+                        &.active {
+                            color: rgba(0, 0, 0, 1);
+                        }
+                    }
                 }
             }
         }
@@ -152,6 +160,14 @@ main#admin {
                         &:last-child {
                             margin-bottom: 0;
                         }
+
+                        a {
+                            color: rgba(0, 0, 0, 0.5);
+
+                            &.active {
+                                color: rgba(0, 0, 0, 1);
+                            }
+                        }
                     }
                 }
             }
@@ -163,7 +179,7 @@ main#admin {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
 
-        .container {
+        & > .container {
             padding: 3rem 1rem;
 
             @media (min-width: 768px) {
@@ -183,8 +199,8 @@ main#admin {
                 padding: 7rem 0;
                 margin-left: 10rem;
             }
+
+            @import './employ', './member', './member-edit', './sns';
         }
     }
-
-    @import './begin', './edit';
 }

@@ -1,0 +1,18 @@
+extends ./_admin-layout
+include ../../mixins/admin_common_title
+include ../../mixins/label-input
+include ../../mixins/label-textarea
+include ../../mixins/admin_buttons
+
+block main
+    section.member-edit
+        +admin_common_title('회원관리', '', 'form')
+        article
+            form
+                +labelInput('아이디')
+                +labelInput('비밀번호', 'password')
+                +labelInput('이름')
+                +labelInput('생년월일','','member-birthday')
+                +labelInput('이메일')(style="margin-bottom: 2.5rem")
+                +labelTextarea('비고')
+            +admin_buttons('등록', '취소')

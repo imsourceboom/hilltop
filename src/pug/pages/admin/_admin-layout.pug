@@ -16,14 +16,39 @@ html(lang="ko")
 
         -
             var menus = [
-                '공지사항',
-                '힐탑일정',
-                '강사채용',
-                '초등사관',
-                '중등관',
-                '고등관',
-                '회원관리',
-                'SNS관리',
+                {
+                    name: '공지사항',
+                    path: '/html/admin/notice.html',
+                    class: 'active',
+                },
+                {
+                    name: '힐탑일정',
+                    path: '/html/admin/schedule.html',
+                },
+                {
+                    name: '강사채용',
+                    path: '/html/admin/employ.html',
+                },
+                {
+                    name: '초등사관',
+                    path: '/html/admin/elementary.html',
+                },
+                {
+                    name: '중등관',
+                    path: '/html/admin/middle.html',
+                },
+                {
+                    name: '고등관',
+                    path: '/html/admin/high.html',
+                },
+                {
+                    name: '회원관리',
+                    path: '/html/admin/member.html',
+                },
+                {
+                    name: 'SNS관리',
+                    path: '/html/admin/sns.html',
+                },
             ]
 
         main#admin
@@ -39,14 +64,14 @@ html(lang="ko")
                     ul
                         each menu in menus
                             li
-                                a(href="")= menu
+                                a(href= menu.path class= menu.class)= menu.name
                 .desk
                     a(href="/index.html")
                         img(src="/assets/images/logo_desk.png", alt="")
                     ul
                         each menu in menus
                             li
-                                a(href="")= menu
+                                a(href= menu.path class= menu.class)= menu.name
             .contents
                 .container
                     block main

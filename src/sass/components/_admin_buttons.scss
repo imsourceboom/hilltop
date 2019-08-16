@@ -1,0 +1,44 @@
+.admin-buttons {
+    margin-top: 3rem;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin: 0 auto;
+
+        // border: 1px solid red;
+
+        @media (min-width: 768px) {
+            width: 400px;
+        }
+
+        li {
+            @include flexCentered();
+            width: 80px;
+            height: 26px;
+            border-radius: 2px;
+            background-color: $representColor;
+
+            input,
+            button {
+                appearance: none;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0);
+                border: 0;
+                font-size: 15px;
+                color: rgba(255, 255, 255, 0.9);
+                cursor: pointer;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                &:active {
+                    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}

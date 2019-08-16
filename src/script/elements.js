@@ -61,10 +61,15 @@ export const checked = {
 
 export const adminNav = {
     self: doc.querySelector('main#admin > nav'),
-    mobile: {
-        menu: doc.querySelector('main#admin > nav .mobile .menu'),
+    accordion: {
+        menuButton: doc.querySelector('main#admin > nav .mobile .menu'),
         menuBox: doc.querySelector('main#admin > nav .mobile ul')
-    }
+    },
+    menuList: Array.from(doc.querySelectorAll('main#admin > nav  ul li a'))
+};
+
+export const adminMember = {
+    self: doc.querySelector('main#admin section.member-edit')
 };
 
 console.log('Webpack On!!');

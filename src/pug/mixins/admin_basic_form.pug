@@ -1,0 +1,13 @@
+mixin admin_basic_form(kind)
+    article.admin-basic-form
+        .top
+            label(for="title")
+                span 제목
+                div
+                input(id="title" type="text")
+            if kind === undefined  
+                select
+                    option(value="") 영어
+                    option(value="") 수학
+        .edit-box
+        .attached

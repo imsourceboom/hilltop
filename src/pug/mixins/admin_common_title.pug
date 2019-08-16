@@ -1,0 +1,8 @@
+mixin admin_common_title(title, course, navigate)
+    hgroup.common-title.admin
+        h3= title
+            if course === 'school'
+                ul
+                    li.active 영어
+                    li 수학
+        p= navigate

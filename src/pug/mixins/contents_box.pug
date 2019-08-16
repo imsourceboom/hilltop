@@ -1,4 +1,4 @@
-mixin contentsBox(condition) 
+mixin contentsBox(condition, back) 
     .content-box
         .title
             h4 게시물의 제목 부분에 해당하는 영역입니다. 제목이 길어줄 경우를 위하여 글을 길게 작성하고 있습니다. 반응형에 따른 줄바꿈 형태를 중점으로 테스트합니다.
@@ -42,5 +42,5 @@ mixin contentsBox(condition)
         .prev-list-next
             //- .prev 이전 게시글
             .list 
-                a(href="/html/elementary/school.html") 목록보기
+                a(href= back) 목록보기
             //- .next 다음 게시글
