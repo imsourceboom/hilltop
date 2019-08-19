@@ -14,7 +14,8 @@ const images = [
         '/assets/images/inside/class3/2.jpg',
         '/assets/images/inside/class3/3.jpg'
     ],
-    ['/assets/images/inside/class4/1.jpg', '/assets/images/inside/class4/2.jpg']
+    ['/assets/images/inside/class4/1.jpg', '/assets/images/inside/class4/2.jpg'],
+    ['https://icongr.am/clarity/close.svg?size=55&color=ffffff']
 ];
 
 export const preload = () => {

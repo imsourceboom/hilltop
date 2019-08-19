@@ -1,0 +1,5 @@
+mixin labelImage(path, typed="text", id, placeholder=" ")
+    label(for=id).custom.label-image
+        input(type=typed id=id placeholder=placeholder)
+        figure
+            img(src=path, alt="")&attributes(attributes)
