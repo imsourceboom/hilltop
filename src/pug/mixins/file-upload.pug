@@ -1,0 +1,13 @@
+mixin fileUpload()
+    article#file-upload.attached-file
+        label(for="input_file").upload-btn-wrapper
+            input(type="file" multiple="multiple" hidden)#input_file
+            figure.upload-btn
+                img(src="/assets/images/admin/clip.svg", alt="")
+                figcaption 파일선택
+        #dropZone
+            #fileDragDesc 파일을 드래그 해주세요.
+
+            table#fileListTable
+                tbody#fileTableTbody
+        //- input(type="button" onclick="uploadFile(); return false;" value="업로드").btn.bg_01

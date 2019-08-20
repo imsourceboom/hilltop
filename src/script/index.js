@@ -9,6 +9,7 @@ import './inside';
 import './checked';
 import './adminNav';
 import './flatpickr';
+import './fileUpload';
 // import './scrollreveal';
 // import './menu';
 

@@ -1,3 +1,5 @@
+include ./file-upload
+
 mixin admin_basic_form(kind)
     article.admin-basic-form
         .top
@@ -10,4 +12,4 @@ mixin admin_basic_form(kind)
                     option(value="") 영어
                     option(value="") 수학
         .edit-box
-        .attached
+        +fileUpload()

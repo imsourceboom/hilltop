@@ -72,4 +72,8 @@ export const adminMember = {
     self: doc.querySelector('main#admin section.member-edit')
 };
 
+export const fileUpload = {
+    self: doc.querySelector('#file-upload.attached-file')
+};
+
 console.log('Webpack On!!');
