@@ -85,7 +85,7 @@ if (fileUpload.self !== null) {
             files = fileObject;
         } else {
             // 직접 파일 등록시
-            files = $('#multipaartFileList_' + fileIndex)[0].files;
+            // files = $('#multipaartFileList_' + fileIndex)[0].files;
         }
 
         // 다중파일 등록
@@ -129,29 +129,23 @@ if (fileUpload.self !== null) {
                     fileSizeStr = parseInt(fileSize) + ' byte';
                 }
 
-                /* if ($.inArray(ext, [ 'exe', 'bat', 'sh', 'java', 'jsp', 'html', 'js', 'css', 'xml' ]) >= 0) {
-                        // 확장자 체크
-                        alert("등록 불가 확장자");
-                        break; */
-
                 var extensions = [
-                        'hwp',
-                        'doc',
-                        'docx',
-                        'xls',
-                        'xlsx',
-                        'ppt',
-                        'pptx',
-                        'txt',
-                        'png',
-                        'pdf',
-                        'jpg',
-                        'jpeg',
-                        'gif',
-                        'zip'
-                    ]
-                if (extensions.indexOf(ext) == -1
-                ) {
+                    'hwp',
+                    'doc',
+                    'docx',
+                    'xls',
+                    'xlsx',
+                    'ppt',
+                    'pptx',
+                    'txt',
+                    'png',
+                    'pdf',
+                    'jpg',
+                    'jpeg',
+                    'gif',
+                    'zip'
+                ];
+                if (extensions.indexOf(ext) == -1) {
                     // 확장자 체크
                     /* alert("등록이 불가능한 파일 입니다.");
                         break; */
@@ -188,25 +182,8 @@ if (fileUpload.self !== null) {
                 alert("start 0");
             } */
 
-        // var html = '';
-        // html += "<tr id='fileTr_" + fIndex + "'>";
-        // html += "    <td id='' class='left' >";
-        // html +=
-        //     fileName +
-        //     ' (' +
-        //     fileSizeStr +
-        //     ') ' +
-        //     //+ "<a href='#' onclick='deleteFile(" + fIndex + "); return false;' class='btn small bg_02'> 삭제</a>"
-
-        //     "<input value='삭제' type='button' href='#' onclick='deleteFile(" +
-        //     fIndex +
-        //     "); return false;'>";
-        // html += '    </td>';
-        // html += '</tr>';
-        // $('#fileTableTbody').append(html);
-
         var trEle = document.createElement('tr');
-        trEle.id = "fileTr_" + fIndex;
+        trEle.id = 'fileTr_' + fIndex;
 
         var tdEle = document.createElement('td');
         tdEle.innerText = fileName + ' (' + fileSizeStr + ')';
@@ -214,7 +191,7 @@ if (fileUpload.self !== null) {
         var deleteBtn = document.createElement('input');
         deleteBtn.type = 'button';
         deleteBtn.value = '삭제';
-        deleteBtn.setAttribute('onclick', 'deleteFile(' + fIndex + '); return false;')
+        deleteBtn.setAttribute('onclick', 'deleteFile(' + fIndex + '); return false;');
 
         trEle.appendChild(tdEle).appendChild(deleteBtn);
         document.getElementById('fileTableTbody').appendChild(trEle);
@@ -233,20 +210,18 @@ if (fileUpload.self !== null) {
         delete fileSizeList[fIndex];
 
         // 업로드 파일 테이블 목록에서 삭제
-        $('#fileTr_' + fIndex).remove();
+        // $('#fileTr_' + fIndex).remove();
+        var targetEle = document.getElementById('fileTr_' + fIndex);
+        targetEle.parentNode.removeChild(targetEle);
 
         console.log('totalFileSize=' + totalFileSize);
 
         if (totalFileSize > 0) {
-            // $('#fileDragDesc').hide();
-            // $('fileListTable').show();
-                document.getElementById('fileDragDesc').style.display = 'none';
-                document.getElementById('fileListTable').style.display = 'block';
+            document.getElementById('fileDragDesc').style.display = 'none';
+            document.getElementById('fileListTable').style.display = 'block';
         } else {
-            // $('#fileDragDesc').show();
-            // $('fileListTable').hide();
-                document.getElementById('fileDragDesc').style.display = 'block';
-                document.getElementById('fileListTable').style.display = 'none';
+            document.getElementById('fileDragDesc').style.display = 'block';
+            document.getElementById('fileListTable').style.display = 'none';
         }
     }
 
