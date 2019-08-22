@@ -1,7 +1,10 @@
 extends ../../_layout
 include ../../mixins/common_title
+include ../../mixins/calendar
 
 block main
     section#notice.schedule
         .container
             +common_title('스케줄')
+            .specific-wrap
+                +calendar()

@@ -1,2 +1,7 @@
+include ../mixins/calendar
+
 section.main_schedule
-    h1 스케줄 영역
+    .container
+        hgroup
+            h1 스케줄
+        +calendar('')(class="intro")

@@ -1,0 +1,29 @@
+mixin calendar(parameter)
+    article.calendar-container
+        .wrap
+            h3.card-header#monthAndYear
+            if parameter === undefined
+                .kind
+                    .bundle
+                        p.active
+                            span
+                            span 힐탑일정
+                        p
+                            span
+                            span 평가일정
+                ul
+                    li 일
+                    li 월
+                    li 화
+                    li 수
+                    li 목
+                    li 금
+                    li 토
+            .box
+                table#calendar
+                    tbody#calendar-body
+                .button-wrap&attributes(attributes)
+                    button#previous
+                        img(src="https://icongr.am/feather/chevron-left.svg?size=24&color=ffffff" alt="")
+                    button#next
+                        img(src="https://icongr.am/feather/chevron-right.svg?size=24&color=ffffff" alt="")

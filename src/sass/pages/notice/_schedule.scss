@@ -1,0 +1,13 @@
+&.schedule {
+    padding-bottom: 4rem;
+
+    .container {
+        .specific-wrap {
+            margin: 0 -1rem;
+
+            @media (min-width: 768px) {
+                margin: 0;
+            }
+        }
+    }
+}

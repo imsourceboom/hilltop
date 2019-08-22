@@ -10,6 +10,7 @@ import './checked';
 import './adminNav';
 import './flatpickr';
 import './fileUpload';
+import './calendar';
 // import './scrollreveal';
 // import './menu';
 
