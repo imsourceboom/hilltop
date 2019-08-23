@@ -151,7 +151,7 @@ article.calendar-container {
                         align-items: center;
                         flex-wrap: wrap;
                         width: 100%;
-                        height: 72%;
+                        height: 70px;
                         overflow: hidden;
                         padding: 0.5rem 0.3rem;
 
@@ -315,7 +315,9 @@ article.calendar-container {
 
                         .pop-close {
                             position: absolute;
+                            top: 50%;
                             right: 1rem;
+                            transform: translateY(-50%);
                             background-image: url('/assets/images/admin/close.svg');
                             background-size: 100%;
                             background-repeat: no-repeat;
