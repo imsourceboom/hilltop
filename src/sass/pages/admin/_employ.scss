@@ -1,5 +1,44 @@
 section.employ {
     article {
         max-width: 500px;
+        font-size: 14px;
+
+        @media (min-width: 768px) {
+            font-size: 15px;
+        }
+
+        form {
+            .apply {
+                height: 30px;
+                margin-bottom: 1.5rem;
+                .name {
+                    display: inline-block;
+                    width: 80px;
+                    margin-right: 0.8rem;
+                    opacity: 0.8;
+                }
+
+                input,
+                label {
+                    cursor: pointer;
+                }
+
+                input {
+                    margin-right: 0.3rem;
+
+                    &:checked + label {
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                }
+
+                label {
+                    color: rgba(0, 0, 0, 0.3);
+
+                    &[for='apply-able'] {
+                        margin-right: 3rem;
+                    }
+                }
+            }
+        }
     }
 }

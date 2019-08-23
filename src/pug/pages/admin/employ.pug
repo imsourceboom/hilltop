@@ -9,6 +9,12 @@ block main
         +admin_common_title('강사채용')
         article
             form
+                .apply
+                    .name 적용
+                    input(type="radio" name="apply" id="apply-able" checked)
+                    label(for="apply-able") 사용
+                    input(type="radio" name="apply" id="apply-disable")
+                    label(for="apply-disable") 미사용
                 +labelTextarea('힐탑인재상')(class="span-width-80")
                 +labelInput('지원자격')(class="span-width-80")
                 +labelInput('제출서류')(class="span-width-80")
