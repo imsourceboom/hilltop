@@ -9,7 +9,7 @@ import './inside';
 import './checked';
 import './adminNav';
 import './flatpickr';
-import './fileUpload';
+// import './fileUpload';
 import './calendar';
 // import './scrollreveal';
 // import './menu';
