@@ -13,5 +13,7 @@ function fileCountFunc(e) {
     }
 }
 
-btnOne.addEventListener('change', fileCountFunc);
-btnTwo.addEventListener('change', fileCountFunc);
+if (btnOne !== null || btnTwo !== null) {
+    btnOne.addEventListener('change', fileCountFunc);
+    btnTwo.addEventListener('change', fileCountFunc);
+}
