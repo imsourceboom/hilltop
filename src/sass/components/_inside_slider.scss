@@ -18,7 +18,11 @@
         right: 1rem;
         width: 35px;
         height: 35px;
-        background-image: url('https://icongr.am/clarity/close.svg?size=35&color=ffffff');
+        background-image: url('/assets/images/admin/close-white.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.7;
         cursor: pointer;
 
         @media (min-width: 768px) {
@@ -26,7 +30,6 @@
             right: 3rem;
             width: 40px;
             height: 40px;
-            background-image: url('https://icongr.am/clarity/close.svg?size=40&color=ffffff');
         }
 
         @media (min-width: 1440px) {
@@ -34,7 +37,10 @@
             right: 4rem;
             width: 55px;
             height: 55px;
-            background-image: url('https://icongr.am/clarity/close.svg?size=55&color=ffffff');
+        }
+
+        &:hover {
+            opacity: 1;
         }
     }
 
