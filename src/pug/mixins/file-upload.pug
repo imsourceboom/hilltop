@@ -1,13 +1,47 @@
 mixin fileUpload()
     article#file-upload.attached-file
-        label(for="input_file").upload-btn-wrapper
-            input(type="file" multiple="multiple" hidden)#input_file
-            figure.upload-btn
-                img(src="/assets/images/admin/clip.svg", alt="")
-                figcaption 파일선택
-        #dropZone
-            #fileDragDesc 파일을 드래그 해주세요.
+        .select-wrap
+            label(for="input_file_1").upload-btn-wrapper
+                input(type="file" multiple="multiple" hidden)#input_file_1.file-button-1
+                figure.upload-btn
+                    img(src="/assets/images/admin/clip.svg", alt="")
+                    figcaption 파일선택
+            .count-wrap
+        .select-wrap
+            label(for="input_file_2").upload-btn-wrapper
+                input(type="file" multiple="multiple" hidden)#input_file_2.file-button-2
+                figure.upload-btn
+                    img(src="/assets/images/admin/clip.svg", alt="")
+                    figcaption 파일선택
+            .count-wrap
+        ul#dropList
+            li
+                p 파일네임
+                    span.noticeFileDel
+                        img(src="/assets/images/admin/close.svg", alt="")
+            li
+                p 파일네임
+                    span.noticeFileDel
+                        img(src="/assets/images/admin/close.svg", alt="")
+            li
+                p 파일네임
+                    span.noticeFileDel
+                        img(src="/assets/images/admin/close.svg", alt="")
+            li
+                p 파일네임
+                    span.noticeFileDel
+                        img(src="/assets/images/admin/close.svg", alt="")
+            li
+                p 파일네임
+                    span.noticeFileDel
+                        img(src="/assets/images/admin/close.svg", alt="")
+            li
+                p 파일네임
+                    span.noticeFileDel
+                        img(src="/assets/images/admin/close.svg", alt="")
+        //- #dropZone
+        //-     #fileDragDesc 파일을 드래그 해주세요.
 
-            table#fileListTable
-                tbody#fileTableTbody
+        //-     table#fileListTable
+        //-         tbody#fileTableTbody
         //- input(type="button" onclick="uploadFile(); return false;" value="업로드").btn.bg_01

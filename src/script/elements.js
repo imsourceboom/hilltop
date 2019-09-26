@@ -76,4 +76,9 @@ export const fileUpload = {
     self: doc.querySelector('#file-upload.attached-file')
 };
 
+export const fileCount = {
+    fileButtonOne: doc.querySelector('#input_file_1.file-button-1'),
+    fileButtonTwo: doc.querySelector('#input_file_2.file-button-2')
+};
+
 console.log('Webpack On!!');
