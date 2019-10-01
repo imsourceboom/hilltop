@@ -2,6 +2,7 @@ article.admin-basic-form {
     .top {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 1.5rem;
 
         label {
             display: flex;
@@ -42,6 +43,6 @@ article.admin-basic-form {
     .edit-box {
         min-height: 500px;
         border: 1px solid rgba(0, 0, 0, 0.5);
-        margin: 1.5rem 0;
+        margin-bottom: 1.5rem;
     }
 }
