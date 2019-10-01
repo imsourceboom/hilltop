@@ -9,7 +9,7 @@ if (adminMember.self) {
     document.head.appendChild(flatCss);
 }
 
-flatpickr('#member-birthday', {
+flatpickr('#mem-birth', {
     locale: Korean,
     disableMobile: true
 });
