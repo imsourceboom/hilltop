@@ -23,7 +23,16 @@ export const main = {
 export const news = {
     self: doc.querySelector('#news'),
     title: doc.querySelectorAll('#news  .container  .contents  ul.box  .wrap > .title'),
-    list: doc.querySelectorAll('#news  .container  .contents  ul.box  .wrap > ul.list')
+    list: doc.querySelectorAll('#news  .container  .contents  ul.box  .wrap > ul.list'),
+    elementary: Array.from(
+        doc.querySelectorAll('#news .container .contents ul.box li.elementary .course-swich')
+    ),
+    middle: Array.from(
+        doc.querySelectorAll('#news .container .contents ul.box li.middle .course-swich')
+    ),
+    high: Array.from(
+        doc.querySelectorAll('#news .container .contents ul.box li.high .course-swich')
+    )
 };
 
 export const board = {

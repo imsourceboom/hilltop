@@ -12,6 +12,7 @@ import './flatpickr';
 // import './fileUpload';
 import './fileCount';
 import './calendar';
+import './mainNewsClassSwich';
 // import './scrollreveal';
 // import './menu';
 

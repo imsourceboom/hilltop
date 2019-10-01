@@ -2,6 +2,10 @@
     var news = [
         {
             title: '공지사항',
+            class: 'notice',
+            eng: '',
+            math: '',
+            active: '',
             list: [
                 '리스트의 1번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
                 '리스트의 2번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
@@ -12,6 +16,10 @@
         },
         {
             title: '초등사관',
+            class: 'elementary',
+            eng: '영어',
+            math: '수학',
+            active: 'active',
             list: [
                 '리스트의 1번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
                 '리스트의 2번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
@@ -22,6 +30,10 @@
         },
         {
             title: '중등관',
+            class: 'middle',
+            eng: '영어',
+            math: '수학',
+            active: 'active',
             list: [
                 '리스트의 1번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
                 '리스트의 2번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
@@ -32,6 +44,10 @@
         },
         {
             title: '고등관',
+            class: 'high',
+            eng: '영어',
+            math: '수학',
+            active: 'active',
             list: [
                 '리스트의 1번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
                 '리스트의 2번째 소식입니다. 긴 줄 생략 기호 테스트인 ellipsis를 위해 더 작성하는 중 입니다.',
@@ -49,11 +65,14 @@ section#news
         .contents
             ul.box
                 each item in news
-                    li
+                    li(class= item.class)
                         .wrap
                             .title
                                 h3= item.title
                                 span more
                             ul.list
+                                li
+                                    span.course-swich(class= item.active)= item.eng
+                                    span.course-swich= item.math
                                 each list in item.list
                                     li= list

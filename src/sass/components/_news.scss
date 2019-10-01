@@ -34,6 +34,18 @@ section#news {
                     width: 100%;
                     padding: 0 1rem;
 
+                    &:first-child {
+                        & > div {
+                            & > ul {
+                                & > li {
+                                    &:first-child {
+                                        line-height: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -117,6 +129,27 @@ section#news {
 
                                 @media (min-width: 768px) {
                                     font-size: 16px;
+                                }
+
+                                &:first-child {
+                                    cursor: default !important;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+
+                                    span {
+                                        width: 80px;
+                                        opacity: 0.5;
+                                        text-align: center;
+                                        font-size: 16px;
+                                        cursor: pointer;
+
+                                        &.active {
+                                            opacity: 1;
+                                            border: 1px solid rgba(0, 0, 0, 0.5);
+                                            border-radius: 8px;
+                                        }
+                                    }
                                 }
 
                                 &:hover {
