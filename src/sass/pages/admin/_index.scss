@@ -175,6 +175,7 @@ main#admin {
     }
 
     .contents {
+        position: relative;
         flex: 1;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
@@ -200,7 +201,7 @@ main#admin {
                 margin-left: 10rem;
             }
 
-            @import './employ', './member', './member-edit', './sns';
+            @import './employ', './member', './member-edit', './sns', './schedule';
         }
     }
 }

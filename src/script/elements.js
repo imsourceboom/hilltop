@@ -81,6 +81,10 @@ export const adminMember = {
     self: doc.querySelector('main#admin section.member-edit')
 };
 
+export const adminSchedule = {
+    self: doc.querySelectorAll('main#admin section.admin-schedule')
+};
+
 export const fileUpload = {
     self: doc.querySelector('#file-upload.attached-file')
 };

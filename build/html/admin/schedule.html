@@ -54,12 +54,172 @@
       </nav>
       <div class="contents">
         <div class="container">
-          <section class="school">
-            <hgroup class="common-title admin">
-              <h3>힐탑일정
-              </h3>
-              <p></p>
-            </hgroup>
+          <section class="admin-schedule">
+            <article class="register">
+              <ul class="swich-title">
+                <li><a class="active" href="">힐탑일정</a></li>
+                <li><a href="">평가일정</a></li>
+              </ul>
+              <div class="view-calendar--wrap">
+                <article class="calendar-container">
+                  <div class="wrap">
+                    <h3 class="card-header" id="monthAndYear"></h3>
+                    <div class="box">
+                      <table id="calendar">
+                        <tbody id="calendar-body"></tbody>
+                      </table>
+                      <div class="button-wrap">
+                        <button id="previous"><img src="/assets/images/arrows/chevron-left.svg" alt=""/></button>
+                        <button id="next"><img src="/assets/images/arrows/chevron-right.svg" alt=""/></button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="add--container">
+                <label for="choose-date"><img src="/assets/images/admin/calendar.svg" alt="">
+                  <input type="text" id="choose-date">
+                </label>
+                <input class="contents" type="text">
+                <div class="add-button"><img src="https://icongr.am/feather/plus.svg?size=26&amp;color=1dd1a1" alt=""></div>
+              </div>
+            </article>
+            <article class="list">
+              <div class="date-board">
+                <div class="year">2019년</div>
+                <div class="month">10월</div>
+              </div>
+              <ul>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text" value="아무 데이터나 들어갑니다." disabled>
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description active" type="text" value="수정중입니다.">
+                  <div class="controls">
+                    <div class="revise active"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="date">1일</div>
+                  <input class="description" type="text">
+                  <div class="controls">
+                    <div class="revise"><img class="edit" src="https://icongr.am/clarity/pencil.svg?size=24&amp;color=2e86de" alt=""><img class="check" src="https://icongr.am/clarity/check.svg?size=26&amp;color=1dd1a1" alt=""></div>
+                    <div class="delete"><img src="https://icongr.am/clarity/times.svg?size=27&amp;color=34495e" alt=""></div>
+                  </div>
+                </li>
+              </ul>
+            </article>
           </section>
         </div>
       </div>

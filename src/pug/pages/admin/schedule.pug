@@ -1,7 +1,181 @@
 extends ./_admin-layout
+include ../../mixins/calendar
+include ../../mixins/label-input
 include ../../mixins/list_admin
 include ../../mixins/admin_common_title
 
 block main
-    section.school
-        +admin_common_title('힐탑일정')
+    section.admin-schedule
+        //- +admin_common_title('힐탑일정')
+        article.register
+            ul.swich-title
+                li
+                    a(href="").active 힐탑일정
+                li
+                    a(href="") 평가일정
+            .view-calendar--wrap
+                +calendar('')
+            
+            .add--container
+                label(for="choose-date")
+                    img(src="/assets/images/admin/calendar.svg", alt="")
+                    input(type="text")#choose-date
+                input(type="text").contents
+                .add-button
+                    img(src="https://icongr.am/feather/plus.svg?size=26&color=1dd1a1", alt="")
+        article.list
+            .date-board
+                .year 2019년
+                .month 10월
+            ul
+                li
+                    .date 1일
+                    input(type="text" value="아무 데이터나 들어갑니다." disabled).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" value="수정중입니다.").description.active
+                    .controls
+                        .revise.active
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+
+
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+
+
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+
+
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+                li
+                    .date 1일
+                    input(type="text" ).description
+                    .controls
+                        .revise
+                            img.edit(src="https://icongr.am/clarity/pencil.svg?size=24&color=2e86de", alt="")
+                            img.check(src="https://icongr.am/clarity/check.svg?size=26&color=1dd1a1", alt="")
+                        .delete
+                            img(src="https://icongr.am/clarity/times.svg?size=27&color=34495e", alt="")
+
