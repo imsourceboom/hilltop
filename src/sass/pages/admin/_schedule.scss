@@ -285,6 +285,10 @@ section.admin-schedule {
                     .controls {
                         display: flex;
 
+                        img {
+                            cursor: pointer;
+                        }
+
                         .revise {
                             margin-right: 0.3rem;
                             .check {
