@@ -168,7 +168,12 @@ article.calendar-container {
                             height: 8px;
                             background-color: rgb(207, 223, 224);
                             color: rgba(0, 0, 0, 0);
+                            // color: red;
                             border-radius: 50%;
+
+                            &.hilltop {
+                                background-color: #194663;
+                            }
 
                             &:last-child {
                                 margin: 0;
@@ -180,21 +185,28 @@ article.calendar-container {
                             }
 
                             @media (min-width: 768px) {
-                                position: relative;
-                                top: 0;
-                                left: 0;
-                                transform: translate(0, 0);
-                                display: flex;
-                                // align-items: center;
-                                justify-content: center;
-                                width: 100%;
-                                // height: 14px;
-                                height: 28px;
-                                background-color: rgba(0, 0, 0, 0);
-                                color: rgba(90, 75, 58, 0.7);
-                                border-radius: 0%;
-                                @include textellipsis(2);
-                                line-height: 1;
+                                & {
+                                    position: relative;
+                                    top: 0;
+                                    left: 0;
+                                    transform: translate(0, 0);
+                                    display: flex;
+                                    // align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    // height: 14px;
+                                    height: 28px;
+                                    background-color: rgba(0, 0, 0, 0);
+                                    color: rgba(90, 75, 58, 0.7);
+                                    border-radius: 0%;
+                                    @include textellipsis(2);
+                                    line-height: 1;
+
+                                    &.hilltop {
+                                        background-color: rgba(0, 0, 0, 0);
+                                        color: #194663;
+                                    }
+                                }
                             }
                         }
                     }
