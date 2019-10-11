@@ -132,6 +132,10 @@ article.board {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                 // border-radius: 0.5rem 0.5rem 0 0;
 
+                p.empty {
+                    padding: 1rem 0;
+                }
+
                 li {
                     text-align: center;
                     padding: 0.5rem 0;
