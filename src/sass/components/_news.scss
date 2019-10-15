@@ -127,6 +127,10 @@ section#news {
                                 font-size: 14px;
                                 transition: 0.5s;
 
+                                &.empty {
+                                    text-align: center;
+                                }
+
                                 @media (min-width: 768px) {
                                     font-size: 16px;
                                 }
