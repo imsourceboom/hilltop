@@ -372,22 +372,26 @@ article.calendar-container {
                         max-height: 260px;
                         overflow-y: scroll;
                         padding: 0 2rem;
+                        background-image: url('/assets/images/symbol.png');
+                        background-repeat: no-repeat;
+                        background-size: 50%;
+                        background-position: 250px 30px;
 
-                        &:after {
-                            content: '';
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            z-index: -1;
-                            background-image: url('/assets/images/logo_main.png');
-                            background-repeat: no-repeat;
-                            background-size: 70%;
-                            background-position: 220px 60px;
-                            opacity: 0.1;
-                        }
+                        // &:after {
+                        //     content: '';
+                        //     display: block;
+                        //     width: 100%;
+                        //     height: 100%;
+                        //     position: fixed;
+                        //     top: 0;
+                        //     left: 0;
+                        //     z-index: -1;
+                        //     background-image: url('/assets/images/logo_main.png');
+                        //     background-repeat: no-repeat;
+                        //     background-size: 70%;
+                        //     background-position: 220px 60px;
+                        //     opacity: 0.1;
+                        // }
 
                         @media (min-width: 768px) {
                             padding: 0 4rem;
