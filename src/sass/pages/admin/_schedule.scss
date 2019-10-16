@@ -272,6 +272,9 @@ section.admin-schedule {
                     @media (min-width: 1366px) {
                         min-width: 400px;
                     }
+                    .date {
+                        min-width: 32.5px;
+                    }
 
                     input.description {
                         flex: 1;
@@ -281,6 +284,7 @@ section.admin-schedule {
                         padding: 0 0.35rem;
                         border: 0;
                         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                        background-color: rgba(255, 255, 255, 1);
 
                         &.active {
                             border: 1px solid rgba(0, 0, 0, 0.2);
