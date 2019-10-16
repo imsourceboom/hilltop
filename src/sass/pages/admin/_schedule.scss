@@ -82,9 +82,15 @@ section.admin-schedule {
                         tr {
                             td {
                                 height: 70px;
+                                &:hover {
+                                    background-color: white;
+                                    cursor: initial;
+                                }
+
                                 span {
                                     font-size: 14px;
                                 }
+
                                 div {
                                     p {
                                         position: absolute;

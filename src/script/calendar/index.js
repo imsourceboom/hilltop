@@ -114,45 +114,53 @@ if (calendarContainer !== null) {
             document.querySelectorAll('table#calendar tbody#calendar-body tr td')
         );
 
-        if (calendar !== null) {
-            tdElements.map(t => {
-                t.addEventListener('click', function() {
-                    var popContainer = document.createElement('div');
-                    popContainer.setAttribute('class', 'pop-container');
-                    var popWrap = document.createElement('div');
-                    popWrap.setAttribute('class', 'pop-wrap');
-                    var popTitle = document.createElement('div');
-                    popTitle.setAttribute('class', 'pop-title');
-                    popTitle.innerHTML =
-                        monthAndYear.innerText +
-                        ' &nbsp;-&nbsp; ' +
-                        zeroAdd(t.children[0].innerText - 1);
-                    var popContents = document.createElement('div');
-                    popContents.setAttribute('class', 'pop-contents');
-                    var popClose = document.createElement('div');
-                    popClose.setAttribute('class', 'pop-close');
+        var adminSchedule = document.querySelector(
+            'main#admin section.admin-schedule .view-calendar--wrap'
+        );
 
-                    var contentData = Array.from(t.children[1].children);
+        function dateClickEvent(e) {
+            var popContainer = document.createElement('div');
+            popContainer.setAttribute('class', 'pop-container');
+            var popWrap = document.createElement('div');
+            popWrap.setAttribute('class', 'pop-wrap');
+            var popTitle = document.createElement('div');
+            popTitle.setAttribute('class', 'pop-title');
+            popTitle.innerHTML =
+                monthAndYear.innerText +
+                ' &nbsp;-&nbsp; ' +
+                zeroAdd(e.currentTarget.children[0].innerText - 1);
+            var popContents = document.createElement('div');
+            popContents.setAttribute('class', 'pop-contents');
+            var popClose = document.createElement('div');
+            popClose.setAttribute('class', 'pop-close');
 
-                    contentData.map(v => {
-                        var dataBox = document.createElement('p');
-                        dataBox.innerText = v.innerText;
-                        popContents.appendChild(dataBox);
-                    });
+            var contentData = Array.from(e.currentTarget.children[1].children);
 
-                    popTitle.appendChild(popClose);
-                    popWrap.appendChild(popTitle);
-                    popWrap.appendChild(popContents);
-                    popContainer.appendChild(popWrap);
-                    calendarWrapperBox.appendChild(popContainer);
-
-                    if (popClose !== null) {
-                        popClose.addEventListener('click', function() {
-                            calendarWrapperBox.removeChild(popContainer);
-                        });
-                    }
-                });
+            contentData.map(v => {
+                var dataBox = document.createElement('p');
+                dataBox.innerText = v.innerText;
+                popContents.appendChild(dataBox);
             });
+
+            popTitle.appendChild(popClose);
+            popWrap.appendChild(popTitle);
+            popWrap.appendChild(popContents);
+            popContainer.appendChild(popWrap);
+            calendarWrapperBox.appendChild(popContainer);
+
+            if (popClose !== null) {
+                popClose.addEventListener('click', function() {
+                    calendarWrapperBox.removeChild(popContainer);
+                });
+            }
+        }
+
+        if (adminSchedule === null) {
+            if (calendar !== null) {
+                tdElements.map(t => {
+                    t.addEventListener('click', dateClickEvent);
+                });
+            }
         }
     }
 
