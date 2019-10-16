@@ -160,6 +160,12 @@ article.calendar-container {
                         overflow: hidden;
                         padding: 0.5rem 0.3rem;
 
+                        @media (min-width: 768px) {
+                            & {
+                                bottom: 0;
+                            }
+                        }
+
                         p {
                             @include centered();
                             font-size: 14px;
