@@ -82,6 +82,7 @@ section.admin-schedule {
                         tr {
                             td {
                                 height: 70px;
+
                                 &:hover {
                                     background-color: white;
                                     cursor: default;
@@ -92,8 +93,7 @@ section.admin-schedule {
                                 }
 
                                 div {
-                                    bottom: initial;
-                                    -ms-bottom: default;
+                                    bottom: auto;
 
                                     p {
                                         position: absolute;
