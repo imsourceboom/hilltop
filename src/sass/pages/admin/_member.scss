@@ -78,11 +78,16 @@ section.member {
                     justify-content: space-between;
                     padding: 0.7rem;
 
+                    a {
+                        cursor: initial;
+                    }
+
                     img {
                         opacity: 0.3;
 
                         &:hover {
                             opacity: 0.8;
+                            cursor: pointer;
                         }
                     }
 

@@ -69,5 +69,10 @@ body {
             font-size: 0.9rem;
         }
     }
+
+    input[type='text']::-ms-clear {
+        display: none;
+    }
+
     @import './custom_common';
 }
