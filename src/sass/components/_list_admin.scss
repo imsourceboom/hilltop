@@ -239,10 +239,27 @@ article.admin {
                     // font-weight: 500;
                     // transform: translateY(-1px);
                     // box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+                    img {
+                        opacity: 1 !important;
+                    }
                 }
 
                 &:last-child {
                     border-bottom: 1px solid rgba(0, 0, 0, 1);
+                }
+                li {
+                    &:nth-child(3) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            display: inline-block;
+                            width: 16px;
+                            margin-left: 5px;
+                            opacity: 0.6;
+                        }
+                    }
                 }
             }
 

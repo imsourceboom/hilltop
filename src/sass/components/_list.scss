@@ -244,6 +244,9 @@ article.board {
                     // font-weight: 500;
                     // transform: translateY(-1px);
                     // box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+                    img {
+                        opacity: 1 !important;
+                    }
                 }
 
                 &:last-child {
@@ -253,6 +256,20 @@ article.board {
                 // input[type="checkbox"] {
                 //     @include customCheckbox();
                 // }
+                li {
+                    &:nth-child(2) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            display: inline-block;
+                            width: 16px;
+                            margin-left: 5px;
+                            opacity: 0.6;
+                        }
+                    }
+                }
             }
 
             a {
