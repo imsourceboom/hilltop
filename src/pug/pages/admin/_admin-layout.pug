@@ -72,7 +72,8 @@ html(lang="ko")
                         each menu in menus
                             li
                                 a(href= menu.path class= menu.class)= menu.name
-                a(href="/html/login/login.html").logout 로그아웃
+                a(href="/html/login/login.html")
+                    p.logout 로그아웃
             .contents
                 .container
                     block main
