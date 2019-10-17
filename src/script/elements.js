@@ -94,4 +94,9 @@ export const fileCount = {
     fileButtonTwo: doc.querySelector('#input_file_2.file-button-2')
 };
 
+export const listEmpty = {
+    parent: doc.querySelector('article.board .list .body ul'),
+    child: doc.querySelector('article.board .list .body ul p.empty')
+};
+
 console.log('Webpack On!!');

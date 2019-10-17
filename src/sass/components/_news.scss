@@ -129,6 +129,7 @@ section#news {
 
                                 &.empty {
                                     text-align: center;
+                                    cursor: default !important;
                                 }
 
                                 @media (min-width: 768px) {
