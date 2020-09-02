@@ -31,7 +31,11 @@
         "webpack-stream": "^5.2.1"
     },
     "dependencies": {
+        "elliptic": "^6.5.3",
         "flatpickr": "^4.6.2",
+        "kind-of": "^6.0.3",
+        "lodash": "^4.17.19",
+        "minimist": "^1.2.3",
         "reset-css": "^4.0.1",
         "scrollreveal": "^4.0.5",
         "serialize-javascript": "^3.1.0",
