@@ -34,6 +34,7 @@
         "flatpickr": "^4.6.2",
         "reset-css": "^4.0.1",
         "scrollreveal": "^4.0.5",
+        "serialize-javascript": "^3.1.0",
         "smooth-scroll": "^16.0.0",
         "swiper": "^4.5.0",
         "web-animations-js": "^2.3.2"
