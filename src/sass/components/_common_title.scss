@@ -33,19 +33,17 @@ hgroup.common-title {
             li {
                 color: rgba(0, 0, 0, 0.44);
                 cursor: pointer;
+                padding: 0 1rem;
+                border-right: 1px solid rgba(0, 0, 0, 0.2);
 
                 &.active {
                     color: black;
                 }
             }
 
-            li:first-child {
-                padding: 0 1rem;
-                border-right: 1px solid rgba(0, 0, 0, 0.2);
-            }
-
             li:last-child {
                 padding: 0 1rem;
+                border-right: 0;
             }
         }
 
