@@ -1,0 +1,100 @@
+&.qna-edit {
+  .edit-form {
+    .errors {
+      margin-top: -1em;
+    }
+    .top {
+      input {
+        // min-width: 150px;
+        height: 35px;
+        font-size: 0.9em;
+        padding: 0 0.5em;
+      }
+
+      .two {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .input-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5em;
+
+        span {
+          margin-right: 0.7em;
+          min-width: 60px;
+          font-size: 0.8em;
+        }
+
+        input {
+          //   width: 100%;
+          flex: 1;
+          border: 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+          border-radius: 0;
+        }
+      }
+    }
+
+    .edit-box {
+      height: 500px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      font-size: 0.95em;
+    }
+
+    .buttons {
+      padding-top: 2em;
+      display: flex;
+      justify-content: center;
+
+      button {
+        height: 35px;
+        width: 130px;
+        font-size: 0.9em;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: white;
+        cursor: pointer;
+        margin-right: 1.44em;
+        border-radius: 4px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .edit-form {
+      .top {
+        input {
+          font-size: 0.95em;
+        }
+
+        .two {
+          .input-group {
+            width: auto;
+            flex: none;
+
+            &:first-child {
+              margin-right: 1.5em;
+            }
+
+            input {
+              flex: none;
+            }
+          }
+        }
+
+        .input-group {
+          span {
+            min-width: auto;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}

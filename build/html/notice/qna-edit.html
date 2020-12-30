@@ -132,16 +132,36 @@
       </article>
     </header>
     <main>
-      <section id="login">
-        <form action="">
-          <label for="id">
-            <input type="text" id="id" placeholder=" "><span>아이디</span>
-          </label>
-          <label for="password">
-            <input type="password" id="password" placeholder=" "><span>비밀번호</span>
-          </label><a href="/html/admin/notice.html">
-            <button type="button">로그인</button></a>
-        </form>
+      <section class="qna-edit" id="notice">
+        <div class="container">
+          <hgroup class="common-title">
+            <h3>Q &amp; A<span></span>
+            </h3>
+            <p> edit</p>
+          </hgroup>
+          <form class="edit-form" action="">
+            <div class="top">
+              <div class="one">
+                <div class="input-group"><span>제목</span>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="two">
+                <div class="input-group"><span>이름</span>
+                  <input id="name" type="text">
+                </div>
+                <div class="input-group"><span>비밀번호</span>
+                  <input id="password" type="password">
+                </div>
+              </div>
+            </div>
+            <div class="edit-box"></div>
+            <div class="buttons">
+              <button type="button">취소</button>
+              <button type="button">확인</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>

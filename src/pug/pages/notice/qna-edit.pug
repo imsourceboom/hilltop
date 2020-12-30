@@ -1,0 +1,27 @@
+extends ../../_layout
+include ../../mixins/common_title
+include ../../mixins/label-input
+
+block main
+    section#notice.qna-edit
+        .container
+            +common_title('Q & A', '', ' edit')
+            form(action="").edit-form
+                .top
+                    .one
+                        .input-group
+                            span 제목
+                            input(type="text")
+                    .two
+                        .input-group
+                            span 이름
+                            input(id="name" type="text")
+                        .input-group
+                            span 비밀번호
+                            input(id="password" type="password")
+                //- .errors 제목을 입력해 주세요.
+                .edit-box
+                //- .errors 제목을 입력해 주세요.
+                .buttons
+                    button(type="button") 취소
+                    button(type="button") 확인

@@ -1,0 +1,130 @@
+&.qna,
+&.qna-detail,
+&.qna-edit {
+  button {
+    appearance: none;
+
+    &:active {
+      box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+&.qna {
+  article.board {
+    .footer {
+      margin-top: 1em;
+
+      .buttons {
+        display: flex;
+        justify-content: flex-end;
+
+        button.register {
+          width: 100px;
+          height: 35px;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+          border-radius: 4px;
+          background-color: rgb(240, 240, 240);
+          cursor: pointer;
+        }
+      }
+
+      ul {
+        padding: 1.5rem 0 0.6em;
+      }
+    }
+  }
+
+  .qna-popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 95%;
+    max-width: 500px;
+    padding: 2em 1em;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    h4.title {
+      font-size: 1.05em;
+      padding-bottom: 2.2em;
+      text-align: center;
+    }
+
+    .box {
+      padding: 0 1em;
+
+      label {
+        margin-bottom: 2em;
+      }
+    }
+
+    .buttons {
+      padding-top: 1em;
+      text-align: center;
+
+      button {
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: white;
+        width: 8em;
+        height: 2.5em;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        &:first-child {
+          margin-right: 1em;
+        }
+
+        &:hover {
+          opacity: 1;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    article.board {
+      .head,
+      .body {
+        ul {
+          li {
+            &:nth-child(2) {
+              order: 4;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    article.board {
+      .footer {
+        ul {
+          padding: 0.6em;
+        }
+      }
+    }
+
+    .qna-popup-container {
+      font-size: 16px;
+
+      .box {
+        padding: 0 3em;
+      }
+    }
+  }
+}

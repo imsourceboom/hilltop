@@ -1,0 +1,87 @@
+extends ../../_layout
+include ../../mixins/common_title
+
+block main
+    section#notice.qna-detail
+        .container
+            +common_title('Q & A', '', 'view')
+            .content-box
+                .title
+                    h4 게시물의 제목 부분에 해당하는 영역입니다. 제목이 길어줄 경우를 위하여 글을 길게 작성하고 있습니다. 반응형에 따른 줄바꿈 형태를 중점으로 테스트합니다.
+                    p
+                        span 홍길동
+                        span 20.07.09
+                        //- span 조회수
+                            b 21
+                article.description
+                    | 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 지방의회의 조직·권한·의원선거와 지방자치단체의 장의 선임방법 기타 지방자치단체의 조직과 운영에 관한 사항은 법률로 정한다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다. 국가는 평생교육을 진흥하여야 한다. 법관은 헌법과 법률에 의하여 그 양심에 따라 독립하여 심판한다. 환경권의 내용과 행사에 관하여는 법률로 정한다.
+
+                //- article.attached-file
+                //-     hgroup
+                //-         img(src="/assets/images/admin/clip.svg", alt="")
+                //-         h4 첨부파일
+                //-     ul.file-box
+                //-         li
+                //-             a(href="")
+                //-                 img(src="/assets/images/custom-icons/file-icon.png", alt="")
+                //-                 span 자료.hwp
+                //-         li
+                //-             a(href="")
+                //-                 img(src="/assets/images/custom-icons/file-icon.png", alt="")
+                //-                 span 단어맞추기.hwp
+                article.reply-box
+                    ul
+                        li
+                            .top
+                                .left
+                                    span.name 홍길동
+                                    span.date 20.12.29
+                                .right
+                                    //- span.modify 수정
+                                    span.delete 삭제
+                            .middle
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                        li.manager
+                            .top
+                                .left
+                                    span.name HILLTOP
+                                    span.date 20.12.29
+                                .right
+                                    //- span.modify 수정
+                                    //- span.delete 삭제
+                            .middle
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                        li
+                            .top
+                                .left
+                                    span.name 홍길동
+                                    span.date 20.12.29
+                                .right
+                                    //- span.modify 수정
+                                    span.delete 삭제
+                            .middle
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                                | 답글을 달고 있습니다. 답글을 길게 쓰도록 하겠습니다.
+                    .input-group
+                        .wrap
+                            input(type="text")
+                            button(type="submit") 확인
+                //- .prev-list-next
+                    //- .prev 이전 게시글
+                    .list 
+                        a(href= back) 목록보기
+                    //- .next 다음 게시글
+                .control-buttons
+                    .left
+                        button(type="button") 목록보기
+                    .right
+                        button(type="button") 수정
+                        button(type="button") 삭제

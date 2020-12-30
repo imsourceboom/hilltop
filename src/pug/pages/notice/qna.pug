@@ -1,0 +1,68 @@
+extends ../../_layout
+include ../../mixins/common_title
+include ../../mixins/label-input
+
+block main
+    section#notice.qna
+        .container
+            +common_title('Q & A', '', ' list')
+            //- +list('/html/notice/detail.html')
+            //- +adminList('/html/admin/notice-edit.html')
+            article.board
+                form.filter(method="" action="")
+                    .choose
+                        p.active
+                            span
+                            span 작성일순
+                        p
+                            span
+                            span 조회수순
+                    .search
+                        select
+                            option(disabled selected) 작성자
+                            -   var filter = ['제목']
+                            each f in filter
+                                option= f
+                        label(for="")
+                            input(type="text" placeholder="검색어 입력").text
+                            input(type="submit" value="").submit
+                .list
+                    .head
+                        ul
+                            - let head = ['상태', '제목', '작성자', '작성일']
+                            each h in head
+                                li= h
+                    .body
+                        // a Tag 삭제
+                        a(href=path)
+                            ul
+                                li 미답변
+                                li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보존하세 
+                                    //- img(src="/assets/images/admin/clip.svg", alt="")
+                                li 신세현
+                                li 2019-04-11
+                        - for (let i = 2; i <= 15; i++)
+                            ul
+                                li 답변완료
+                                - let body = ['나는 자랑스런 태극기 앞에 조국과 민족의 무궁한 영광을 위하여', '임승범', '2019-00-00']
+                                each b in body
+                                    li= b
+                    .footer
+                        .buttons
+                            button.register 등록
+                        ul
+                            li Prev
+                            li.page.active 1
+                            - for (let i = 2; i <= 5; i++)
+                                li.page= i
+                            li Next
+        .qna-popup-container
+            .wrap
+                h4.title 이름과 비밀번호를 입력하세요
+                .box
+                    +labelInput('이름')
+                    +labelInput('비밀번호', 'password')
+                .buttons
+                    button(type="button").close 취소
+                    button(type="submit").confirm 확인
+

@@ -1,0 +1,135 @@
+&.qna-detail {
+  .content-box {
+    .prev-list-next {
+      padding-top: 2em;
+      margin-top: 1em;
+    }
+
+    article.description {
+      margin-bottom: 3em;
+    }
+
+    article.reply-box {
+      ul {
+        font-size: 0.9em;
+
+        li {
+          padding: 1em 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          line-height: 1.5;
+
+          &:first-child {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+          }
+
+          &:last-child {
+            border: 0;
+          }
+
+          .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.9em;
+
+            .right {
+              span {
+                cursor: pointer;
+              }
+            }
+
+            span {
+              margin-right: 0.85em;
+              font-size: 0.9em;
+              color: rgba(0, 0, 0, 0.6);
+
+              &.name {
+                color: black;
+                font-weight: bold;
+              }
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+
+          &.manager {
+            span.name {
+              color: rgb(84, 189, 255);
+            }
+          }
+        }
+      }
+
+      .input-group {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+        .wrap {
+          padding: 1.5em 0 0.5em;
+
+          input,
+          button {
+            height: 36px;
+            font-size: 0.9em;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            background-color: white;
+          }
+
+          input {
+            width: 100%;
+            margin-bottom: 0.5em;
+            padding: 0 0.5em;
+          }
+
+          button {
+            width: 100%;
+            background-color: rgb(224, 224, 224);
+            border: 0;
+            color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .control-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3em;
+
+      button {
+        width: 80px;
+        height: 35px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        background-color: rgb(240, 240, 240);
+        cursor: pointer;
+      }
+
+      .right {
+        button:first-child {
+          margin-right: 0.7em;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .input-group {
+      .wrap {
+        padding: 2em 0 0.5em !important;
+        display: flex;
+
+        input {
+          margin: 0;
+          margin-right: 0.5em;
+        }
+
+        button {
+          max-width: 120px;
+        }
+      }
+    }
+  }
+}
