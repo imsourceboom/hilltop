@@ -18,3 +18,22 @@ if (qna !== null) {
     });
   }
 }
+
+const qnaDetail = document.querySelector('section#notice.qna-detail');
+const deleteBtn = document.querySelector('.control-buttons .right .delete');
+const deletePopup = document.querySelector(
+  'section#notice.qna-detail .qna-delete-popup-container',
+);
+const deletePopupClose = document.querySelector(
+  'section#notice.qna-detail .qna-delete-popup-container .buttons button.close',
+);
+
+if (qnaDetail !== null) {
+  deleteBtn.addEventListener('click', () => {
+    deletePopup.classList.add('active');
+  });
+
+  deletePopupClose.addEventListener('click', () => {
+    deletePopup.classList.remove('active');
+  });
+}
