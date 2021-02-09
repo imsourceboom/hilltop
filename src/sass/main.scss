@@ -7,11 +7,11 @@
 @import 'layout/header', 'layout/main', 'layout/footer';
 
 @import 'components/go_top', 'components/banner', 'components/news', 'components/schedule',
-    'components/common_title', 'components/list', 'components/school_title',
-    'components/content_box', 'components/inside_slider', 'components/list_admin',
-    'components/login', 'components/admin_common_title', 'components/admin_basic_form',
-    'components/admin_buttons', 'components/label-input-textarea', 'components/file_upload',
-    'components/calendar';
+  'components/common_title', 'components/list', 'components/school_title',
+  'components/content_box', 'components/inside_slider', 'components/list_admin',
+  'components/login', 'components/admin_common_title', 'components/admin_basic_form',
+  'components/admin_buttons', 'components/label-input-textarea', 'components/file_upload',
+  'components/calendar', 'components/popup';
 
 @import 'pages/introduction/introduction', 'pages/notice/index', 'pages/school/index',
-    'pages/admin/index';
+  'pages/admin/index';

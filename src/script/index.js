@@ -15,6 +15,7 @@ import './fileCount';
 import './calendar';
 import './mainNewsClassSwich';
 import './qna';
+import './cookie';
 // import './scrollreveal';
 // import './menu';
 

@@ -6,5 +6,13 @@ include ../../mixins/admin_buttons
 block main
     section.notice-edit
         +admin_common_title('공지사항', '', 'form')
+        .popup-check-container
+            .popup-check-wrap
+                .popup-check-group
+                    input(type="checkbox" id="notice-popup" hidden)
+                    label(for="notice-popup") 
+                        .box
+                        span 팝업 노출
+                    img(src="https://icongr.am/feather/check.svg?size=22&color=1f95d1", alt="")
         +admin_basic_form('공지')
         +admin_buttons('수정', '삭제', '취소')
