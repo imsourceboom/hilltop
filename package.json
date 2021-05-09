@@ -35,7 +35,7 @@
     "elliptic": "^6.5.3",
     "flatpickr": "^4.6.2",
     "kind-of": "^6.0.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "minimist": "^1.2.3",
     "mixin-deep": "^1.3.2",
     "reset-css": "^4.0.1",
